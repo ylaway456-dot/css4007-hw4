@@ -1,0 +1,32 @@
+[
+  {
+    "run": 2,
+    "strategy": "S1",
+    "correct": 8,
+    "unanswered": 4,
+    "input_tokens": 44140,
+    "output_tokens": 1315,
+    "median_seconds": 1.391,
+    "total_seconds": 28.078
+  },
+  {
+    "run": 2,
+    "strategy": "S2",
+    "correct": 15,
+    "unanswered": 0,
+    "input_tokens": 222700,
+    "output_tokens": 11109,
+    "median_seconds": 8.078,
+    "total_seconds": 159.222
+  },
+  {
+    "run": 2,
+    "strategy": "S3",
+    "correct": 17,
+    "unanswered": 0,
+    "input_tokens": 49512,
+    "output_tokens": 4198,
+    "median_seconds": 3.875,
+    "total_seconds": 79.694
+  }
+]

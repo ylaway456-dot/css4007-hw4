@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-17",
+  "answer": "Harrowfield; water use per resident is \\(7{,}146{,}000/90{,}212\\) m³ versus \\(3{,}862{,}000/52{,}904\\) m³ for Ossbridge. At 142.35 tenge/m³, the difference is 3,768.08 tenge, rounded to 3,768.\n\nANSWER: Harrowfield | 3768",
+  "samples": [
+    {
+      "answer": "Harrowfield; water use per resident is \\(7{,}146{,}000/90{,}212\\) m³ versus \\(3{,}862{,}000/52{,}904\\) m³ for Ossbridge. At 142.35 tenge/m³, the difference is 3,768.08 tenge, rounded to 3,768.\n\nANSWER: Harrowfield | 3768",
+      "seconds": 1.5038,
+      "input_tokens": 2213,
+      "output_tokens": 95,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2213,
+  "output_tokens": 95,
+  "seconds": 1.5038,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": false,
+    "parsed": {
+      "name": "Harrowfield",
+      "number": "3768"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

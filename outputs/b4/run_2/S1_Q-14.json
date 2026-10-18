@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-14",
+  "answer": "Ashgrove: 0.2 litres per resident per day more than Tarnvale.\n\nANSWER: Ashgrove | 0.2",
+  "samples": [
+    {
+      "answer": "Ashgrove: 0.2 litres per resident per day more than Tarnvale.\n\nANSWER: Ashgrove | 0.2",
+      "seconds": 1.6065,
+      "input_tokens": 2207,
+      "output_tokens": 31,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2207,
+  "output_tokens": 31,
+  "seconds": 1.6065,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": false,
+    "parsed": {
+      "name": "Ashgrove",
+      "number": "0.2"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

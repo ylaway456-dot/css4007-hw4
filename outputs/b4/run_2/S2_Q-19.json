@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-19",
+  "answer": "ANSWER: Lindenmoor | 0.035",
+  "samples": [
+    {
+      "answer": "Calculation summary:  \nLindenmoor: \\(402.3 \\div 1,015.7 = 0.396\\) km/km²  \nRedfen: \\(244.6 \\div 677.1 = 0.361\\) km/km²  \nDifference: \\(0.396 - 0.361 = 0.035\\) km/km². Lindenmoor is denser.\n\nANSWER: Lindenmoor | 0.035 km of road per square kilometre",
+      "seconds": 1.6074,
+      "input_tokens": 2221,
+      "output_tokens": 102,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Lindenmoor: 402.3 ÷ 1,015.7 = 0.396 km/km²  \n- Redfen: 244.6 ÷ 677.1 = 0.361 km/km²  \n- Difference: 0.396 − 0.361 = 0.035 km/km²  \n\nANSWER: Lindenmoor | 0.035 km of road per square kilometre more",
+      "seconds": 1.3491,
+      "input_tokens": 2221,
+      "output_tokens": 93,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Lindenmoor: 402.3 ÷ 1,015.7 = 0.396 km/km²  \n- Redfen: 244.6 ÷ 677.1 = 0.361 km/km²  \n- Difference: 0.396 − 0.361 = 0.035 km/km²  \n\nANSWER: Lindenmoor | 0.035 km of road per square kilometre denser",
+      "seconds": 1.6144,
+      "input_tokens": 2221,
+      "output_tokens": 94,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Lindenmoor: \\(402.3 \\div 1,015.7 = 0.396\\) km of road/km²  \n- Redfen: \\(244.6 \\div 677.1 = 0.361\\) km of road/km²  \n- Difference: \\(0.396 - 0.361 = 0.035\\) km/km²  \n\nANSWER: Lindenmoor | 0.035 km of road per square kilometre denser",
+      "seconds": 1.5914,
+      "input_tokens": 2221,
+      "output_tokens": 104,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Lindenmoor: \\(402.3 \\div 1,015.7 = 0.396\\) km/km²  \n- Redfen: \\(244.6 \\div 677.1 = 0.361\\) km/km²  \n- Difference: \\(0.396 - 0.361 = 0.035\\) km/km²  \n\nANSWER: Lindenmoor | 0.035 km of road per square kilometre",
+      "seconds": 1.3075,
+      "input_tokens": 2221,
+      "output_tokens": 98,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11105,
+  "output_tokens": 491,
+  "seconds": 7.4701,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Lindenmoor",
+      "number": "0.035"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-09",
+  "answer": "ANSWER: Millbrook | 0.6",
+  "samples": [
+    {
+      "answer": "Calculation summary:  \n- Brightwater: 44,675 ÷ 921.4 = 48.5 residents/km²  \n- Millbrook: 37,203 ÷ 758.6 = 49.0 residents/km²  \n- Difference: 49.0 − 48.5 = 0.5 residents/km²  \n\nANSWER: Millbrook | 0.5 residents per square kilometre",
+      "seconds": 1.4444,
+      "input_tokens": 2221,
+      "output_tokens": 88,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Brightwater: 44,675 ÷ 921.4 = 48.5 residents/km²  \n- Millbrook: 37,203 ÷ 758.6 = 49.1 residents/km²  \n- Difference: 49.1 − 48.5 = 0.6 residents/km²  \n\nANSWER: Millbrook | 0.6 residents per square kilometre",
+      "seconds": 1.5656,
+      "input_tokens": 2221,
+      "output_tokens": 88,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \nBrightwater: 44,675 ÷ 921.4 = 48.5 residents/km²  \nMillbrook: 37,203 ÷ 758.6 = 49.1 residents/km²  \nDifference: 49.1 − 48.5 = 0.6 residents/km²\n\nANSWER: Millbrook | 0.6 residents per square kilometre",
+      "seconds": 1.2206,
+      "input_tokens": 2221,
+      "output_tokens": 85,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Population density:\n- Brightwater: 44,675 ÷ 921.4 = 48.5 residents/km²\n- Millbrook: 37,203 ÷ 758.6 = 49.0 residents/km²\n- Difference: 49.0 − 48.5 = 0.5 residents/km²\n\nANSWER: Millbrook | 0.5 residents per square kilometre",
+      "seconds": 1.2396,
+      "input_tokens": 2221,
+      "output_tokens": 87,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Brightwater: 44,675 ÷ 921.4 = 48.5 residents/km²  \n- Millbrook: 37,203 ÷ 758.6 = 49.1 residents/km²  \n- Difference: 49.1 − 48.5 = 0.6 residents/km²  \n\nANSWER: Millbrook | 0.6 residents per square kilometre",
+      "seconds": 1.273,
+      "input_tokens": 2221,
+      "output_tokens": 88,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11105,
+  "output_tokens": 436,
+  "seconds": 6.7435,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Millbrook",
+      "number": "0.6"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

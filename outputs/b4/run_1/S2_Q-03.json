@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-03",
+  "answer": "ANSWER: Lindenmoor | 5.3",
+  "samples": [
+    {
+      "answer": "Calculation summary:\n- Lindenmoor: 2,151,400 m³ × 1,000 ÷ 29,051 residents ÷ 365 = 202.8 L/resident/day.\n- Kelmarsh: 1,739 ML × 1,000 ÷ 24,117 residents ÷ 365 = 197.6 L/resident/day.\n- Difference: 202.8 − 197.6 = 5.2 L/resident/day.\n\nANSWER: Lindenmoor | 5.2 litres per resident per day more",
+      "seconds": 1.6577,
+      "input_tokens": 2227,
+      "output_tokens": 117,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Lindenmoor: 2,151,400 m³ × 1,000 ÷ (29,051 × 365) = 0.2028 m³ = 202.8 L/resident/day  \n- Kelmarsh: 1,739 ML × 1,000 ÷ (24,117 × 365) = 0.1976 m³ = 197.6 L/resident/day  \n- Difference: 202.8 − 197.6 = 5.2 L/resident/day  \n\nANSWER: Lindenmoor | 5.2 litres per resident per day more",
+      "seconds": 1.8961,
+      "input_tokens": 2227,
+      "output_tokens": 132,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:\n\n- Lindenmoor: \\(2{,}151{,}400\\ \\text{m}^3 = 2{,}151{,}400{,}000\\) L; \\(2{,}151{,}400{,}000 \\div 29{,}051 \\div 365 = 202.9\\) L/resident/day.\n- Kelmarsh: \\(1{,}739\\) ML \\(= 1{,}739{,}000{,}000\\) L; \\(1{,}739{,}000{,}000 \\div 24{,}117 \\div 365 = 197.6\\) L/resident/day.\n- Difference: \\(202.9 - 197.6 = 5.3\\) L/resident/day.\n\nANSWER: Lindenmoor | 5.3 litres per resident per day more",
+      "seconds": 2.2728,
+      "input_tokens": 2227,
+      "output_tokens": 196,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Lindenmoor: 2,151,400 m³ × 1,000 ÷ 29,051 residents ÷ 365 days = 0.2029 m³ = 202.9 L/resident/day  \n- Kelmarsh: 1,739 ML × 1,000 ÷ 24,117 residents ÷ 365 days = 0.1976 m³ = 197.6 L/resident/day  \n- Difference: 202.9 − 197.6 = 5.3 L/resident/day\n\nANSWER: Lindenmoor | 5.3 litres per resident per day more than Kelmarsh",
+      "seconds": 1.7117,
+      "input_tokens": 2227,
+      "output_tokens": 140,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Lindenmoor: 2,151,400 m³ × 1,000 ÷ (29,051 residents × 365 days) = 0.2029 m³ = 202.9 L/resident/day  \n- Kelmarsh: 1,739 ML × 1,000 ÷ (24,117 residents × 365 days) = 0.1976 m³ = 197.6 L/resident/day  \n- Difference: 202.9 − 197.6 = 5.3 L/resident/day  \n\nANSWER: Lindenmoor | 5.3 litres per resident per day more than Kelmarsh",
+      "seconds": 1.6444,
+      "input_tokens": 2227,
+      "output_tokens": 140,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11135,
+  "output_tokens": 725,
+  "seconds": 9.1831,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Lindenmoor",
+      "number": "5.3"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

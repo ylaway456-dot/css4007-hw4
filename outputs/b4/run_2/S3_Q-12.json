@@ -1,0 +1,200 @@
+{
+  "question_id": "Q-12",
+  "model": "gpt-5.6-luna",
+  "max_rounds": 8,
+  "status": "answered",
+  "answer": "Tarnvale works out higher: **64.4 thousand tenge per pupil** more than Harrowfield.\n\nANSWER: Tarnvale | 64.4",
+  "api_rounds": [
+    {
+      "round": 1,
+      "seconds": 1.427,
+      "input_tokens": 497,
+      "output_tokens": 107
+    },
+    {
+      "round": 2,
+      "seconds": 1.025,
+      "input_tokens": 739,
+      "output_tokens": 40
+    },
+    {
+      "round": 3,
+      "seconds": 0.992,
+      "input_tokens": 806,
+      "output_tokens": 35
+    }
+  ],
+  "tool_calls": [
+    {
+      "round": 1,
+      "tool_call_id": "call_7XMcH42X7fceUdMQVaDhLdzI",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Harrowfield\", \"field\": \"budget_million_tenge\"}",
+      "result": {
+        "ok": true,
+        "value": 16021.7,
+        "unit": "million tenge",
+        "source_id": "NR-07"
+      },
+      "seconds": 0.000271
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_spsEMpCeGHQB7RXoqldti47q",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Harrowfield\", \"field\": \"pupils\"}",
+      "result": {
+        "ok": true,
+        "value": 13904,
+        "unit": "pupils",
+        "source_id": "NR-07"
+      },
+      "seconds": 0.00027
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_2YiCTovx7Q38UNsj1hgnGIuu",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Tarnvale\", \"field\": \"budget_million_tenge\"}",
+      "result": {
+        "ok": true,
+        "value": 12960.3,
+        "unit": "million tenge",
+        "source_id": "NR-03"
+      },
+      "seconds": 0.000153
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_IYgqbI21yy6P0BaQzKFgZOzu",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Tarnvale\", \"field\": \"pupils\"}",
+      "result": {
+        "ok": true,
+        "value": 10652,
+        "unit": "pupils",
+        "source_id": "NR-03"
+      },
+      "seconds": 0.000157
+    },
+    {
+      "round": 2,
+      "tool_call_id": "call_sBzwksrpcyDkS53qndhd7d54",
+      "tool": "calculate",
+      "arguments": "{\"expression\":\"(16021.7*1000000/13904)-(12960.3*1000000/10652)\"}",
+      "result": {
+        "ok": true,
+        "value": -64392.40085007576
+      },
+      "seconds": 0.000102
+    }
+  ],
+  "input_tokens": 2042,
+  "output_tokens": 182,
+  "error": null,
+  "total_seconds": 3.445,
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Answer questions about the fictional Nine Rivers Region. You do not have the documents. Get facts using lookup and perform arithmetic with calculate. Do not invent figures. Use 2025 figures, current profiles and corrections when relevant. Do not round intermediate results. Finish with a line exactly like: ANSWER: Name | 0.0. If reliable facts are missing, say UNANSWERED."
+    },
+    {
+      "role": "user",
+      "content": "Which district's 2025 budget works out higher per school pupil, Harrowfield or Tarnvale, and by how many thousand tenge per pupil?\nRound the final number to 1 decimal places."
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_7XMcH42X7fceUdMQVaDhLdzI",
+          "function": {
+            "arguments": "{\"district\": \"Harrowfield\", \"field\": \"budget_million_tenge\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_spsEMpCeGHQB7RXoqldti47q",
+          "function": {
+            "arguments": "{\"district\": \"Harrowfield\", \"field\": \"pupils\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_2YiCTovx7Q38UNsj1hgnGIuu",
+          "function": {
+            "arguments": "{\"district\": \"Tarnvale\", \"field\": \"budget_million_tenge\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_IYgqbI21yy6P0BaQzKFgZOzu",
+          "function": {
+            "arguments": "{\"district\": \"Tarnvale\", \"field\": \"pupils\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_7XMcH42X7fceUdMQVaDhLdzI",
+      "content": "{\"ok\": true, \"value\": 16021.7, \"unit\": \"million tenge\", \"source_id\": \"NR-07\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_spsEMpCeGHQB7RXoqldti47q",
+      "content": "{\"ok\": true, \"value\": 13904, \"unit\": \"pupils\", \"source_id\": \"NR-07\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_2YiCTovx7Q38UNsj1hgnGIuu",
+      "content": "{\"ok\": true, \"value\": 12960.3, \"unit\": \"million tenge\", \"source_id\": \"NR-03\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_IYgqbI21yy6P0BaQzKFgZOzu",
+      "content": "{\"ok\": true, \"value\": 10652, \"unit\": \"pupils\", \"source_id\": \"NR-03\"}"
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_sBzwksrpcyDkS53qndhd7d54",
+          "function": {
+            "arguments": "{\"expression\":\"(16021.7*1000000/13904)-(12960.3*1000000/10652)\"}",
+            "name": "calculate"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_sBzwksrpcyDkS53qndhd7d54",
+      "content": "{\"ok\": true, \"value\": -64392.40085007576}"
+    },
+    {
+      "content": "Tarnvale works out higher: **64.4 thousand tenge per pupil** more than Harrowfield.\n\nANSWER: Tarnvale | 64.4",
+      "role": "assistant",
+      "annotations": []
+    }
+  ],
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Tarnvale",
+      "number": "64.4"
+    }
+  },
+  "strategy": "S3",
+  "run_number": 2
+}

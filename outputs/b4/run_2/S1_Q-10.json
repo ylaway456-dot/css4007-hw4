@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-10",
+  "answer": "Stonecairn is older than Coldharbour by 8 years.  \nANSWER: Stonecairn | 8",
+  "samples": [
+    {
+      "answer": "Stonecairn is older than Coldharbour by 8 years.  \nANSWER: Stonecairn | 8",
+      "seconds": 0.8268,
+      "input_tokens": 2198,
+      "output_tokens": 28,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2198,
+  "output_tokens": 28,
+  "seconds": 0.8268,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Stonecairn",
+      "number": "8"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

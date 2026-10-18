@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-19",
+  "answer": "Redfen has the denser paved road network. Lindenmoor: 402.3 ÷ 1,015.7 = 0.396 km/km²; Redfen: 244.6 ÷ 677.1 = 0.361 km/km². Difference: 0.035 km/km².\n\nANSWER: Redfen | 0.035 km of road per square kilometre",
+  "samples": [
+    {
+      "answer": "Redfen has the denser paved road network. Lindenmoor: 402.3 ÷ 1,015.7 = 0.396 km/km²; Redfen: 244.6 ÷ 677.1 = 0.361 km/km². Difference: 0.035 km/km².\n\nANSWER: Redfen | 0.035 km of road per square kilometre",
+      "seconds": 1.2138,
+      "input_tokens": 2201,
+      "output_tokens": 85,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2201,
+  "output_tokens": 85,
+  "seconds": 1.2138,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": false,
+    "number_correct": true,
+    "parsed": {
+      "name": "Redfen",
+      "number": "0.035"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

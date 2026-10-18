@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-13",
+  "answer": "Stonecairn lost the largest percentage: \\((15,473 - 14,926) / 15,473 \\times 100 = 3.53\\%\\).\n\nANSWER: Stonecairn | 3.53%",
+  "samples": [
+    {
+      "answer": "Stonecairn lost the largest percentage: \\((15,473 - 14,926) / 15,473 \\times 100 = 3.53\\%\\).\n\nANSWER: Stonecairn | 3.53%",
+      "seconds": 1.169,
+      "input_tokens": 2212,
+      "output_tokens": 52,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2212,
+  "output_tokens": 52,
+  "seconds": 1.169,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": false,
+    "number_correct": false,
+    "parsed": {
+      "name": "Stonecairn",
+      "number": "3.53"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

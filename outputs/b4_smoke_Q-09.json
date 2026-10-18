@@ -1,0 +1,79 @@
+{
+  "S1": {
+    "strategy": "S1",
+    "question_id": "Q-09",
+    "answer": "Brightwater: 44,675 ÷ 921.4 = 48.5 residents/km²; Millbrook: 37,203 ÷ 758.6 = 49.0 residents/km². Millbrook is higher by 0.5 residents/km².\n\nANSWER: Millbrook | 0.5 residents per square kilometre",
+    "samples": [
+      {
+        "answer": "Brightwater: 44,675 ÷ 921.4 = 48.5 residents/km²; Millbrook: 37,203 ÷ 758.6 = 49.0 residents/km². Millbrook is higher by 0.5 residents/km².\n\nANSWER: Millbrook | 0.5 residents per square kilometre",
+        "seconds": 1.9265,
+        "input_tokens": 2201,
+        "output_tokens": 74,
+        "temperature_used": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "input_tokens": 2201,
+    "output_tokens": 74,
+    "seconds": 1.9265,
+    "score": {
+      "correct": false,
+      "unanswered": true
+    }
+  },
+  "S2": {
+    "strategy": "S2",
+    "question_id": "Q-09",
+    "answer": "UNANSWERED",
+    "samples": [
+      {
+        "answer": "Calculation summary:  \n- Brightwater: 44,675 ÷ 921.4 = 48.5 residents/km²  \n- Millbrook: 37,203 ÷ 758.6 = 49.1 residents/km²  \n- Difference: 49.1 − 48.5 = 0.6 residents/km²  \n\nANSWER: Millbrook | 0.6 residents per square kilometre",
+        "seconds": 1.5874,
+        "input_tokens": 2221,
+        "output_tokens": 88,
+        "temperature_used": 0.7,
+        "finish_reason": "stop"
+      },
+      {
+        "answer": "Calculation summary:  \n- Brightwater: 44,675 ÷ 921.4 = 48.4816 residents/km²  \n- Millbrook: 37,203 ÷ 758.6 = 49.0535 residents/km²  \n- Difference: 49.0535 − 48.4816 = 0.5719 ≈ 0.6 residents/km²  \n\nANSWER: Millbrook | 0.6 residents per square kilometre higher",
+        "seconds": 2.3344,
+        "input_tokens": 2221,
+        "output_tokens": 100,
+        "temperature_used": 0.7,
+        "finish_reason": "stop"
+      },
+      {
+        "answer": "Calculation: Brightwater = 44,675 ÷ 921.4 = 48.5 residents/km². Millbrook = 37,203 ÷ 758.6 = 49.0 residents/km². Difference = 49.0 − 48.5 = 0.5 residents/km².\n\nANSWER: Millbrook | 0.5 residents per square kilometre",
+        "seconds": 2.2346,
+        "input_tokens": 2221,
+        "output_tokens": 83,
+        "temperature_used": 0.7,
+        "finish_reason": "stop"
+      },
+      {
+        "answer": "Calculation summary:  \n- Brightwater: 44,675 ÷ 921.4 = 48.5 residents/km²  \n- Millbrook: 37,203 ÷ 758.6 = 49.0 residents/km²  \n- Difference: 49.0 − 48.5 = 0.5 residents/km²  \n\nANSWER: Millbrook | 0.5 residents per square kilometre",
+        "seconds": 1.8456,
+        "input_tokens": 2221,
+        "output_tokens": 88,
+        "temperature_used": 0.7,
+        "finish_reason": "stop"
+      },
+      {
+        "answer": "Calculation summary:  \n- Brightwater: \\(44,675 \\div 921.4 = 48.5\\) residents/km²  \n- Millbrook: \\(37,203 \\div 758.6 = 49.0\\) residents/km²  \n- Difference: \\(49.0 - 48.5 = 0.5\\) residents/km²  \n\nANSWER: Millbrook | 0.5 residents per square kilometre higher",
+        "seconds": 1.6426,
+        "input_tokens": 2221,
+        "output_tokens": 95,
+        "temperature_used": 0.7,
+        "finish_reason": "stop"
+      }
+    ],
+    "input_tokens": 11105,
+    "output_tokens": 454,
+    "seconds": 9.6448,
+    "temperature_supported": true,
+    "score": {
+      "correct": false,
+      "unanswered": true
+    }
+  }
+}

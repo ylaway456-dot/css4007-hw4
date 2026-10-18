@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-04",
+  "answer": "Ashgrove has more pupils per school.\n\nAshgrove: 8,837 ÷ 24 = 368.2083 pupils per school  \nMillbrook: 5,562 ÷ 15 = 370.8 pupils per school  \nDifference: 370.8 − 368.2083 = 2.59 pupils per school\n\nANSWER: Millbrook | 2.59 pupils per school",
+  "samples": [
+    {
+      "answer": "Ashgrove has more pupils per school.\n\nAshgrove: 8,837 ÷ 24 = 368.2083 pupils per school  \nMillbrook: 5,562 ÷ 15 = 370.8 pupils per school  \nDifference: 370.8 − 368.2083 = 2.59 pupils per school\n\nANSWER: Millbrook | 2.59 pupils per school",
+      "seconds": 1.3359,
+      "input_tokens": 2202,
+      "output_tokens": 87,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2202,
+  "output_tokens": 87,
+  "seconds": 1.3359,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Millbrook",
+      "number": "2.59"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-10",
+  "answer": "ANSWER: Stonecairn | 8",
+  "samples": [
+    {
+      "answer": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845.\n\nCalculation: 1845 − 1837 = 8 years.\n\nANSWER: Stonecairn | 8 years",
+      "seconds": 1.0401,
+      "input_tokens": 2218,
+      "output_tokens": 49,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845.\n\nCalculation: 1845 − 1837 = 8 years.\n\nANSWER: Stonecairn | 8 years older",
+      "seconds": 1.1085,
+      "input_tokens": 2218,
+      "output_tokens": 50,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary: Stonecairn was founded in 1837; Coldharbour was founded in 1845. \\(1845 - 1837 = 8\\) years.\n\nANSWER: Stonecairn | 8 years",
+      "seconds": 1.2772,
+      "input_tokens": 2218,
+      "output_tokens": 51,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary: Stonecairn was founded in 1837; Coldharbour was founded in 1845. \\(1845 - 1837 = 8\\) years.\n\nANSWER: Stonecairn | 8 years",
+      "seconds": 0.9053,
+      "input_tokens": 2218,
+      "output_tokens": 51,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845.\n\nCalculation: 1845 − 1837 = 8 years.\n\nANSWER: Stonecairn | 8 years older",
+      "seconds": 1.131,
+      "input_tokens": 2218,
+      "output_tokens": 50,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11090,
+  "output_tokens": 251,
+  "seconds": 5.4625,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Stonecairn",
+      "number": "8"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

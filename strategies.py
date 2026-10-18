@@ -80,7 +80,7 @@ def call_local_tool(name, arguments_string):
         }
 
 
-def run_b3(client, question_id, question, decimals):
+def run_b3(client, question_id, question, decimals, output_path=None):
     """Run the real tool-calling conversation."""
 
     messages = [
@@ -235,7 +235,7 @@ def run_b3(client, question_id, question, decimals):
         output = ROOT / "outputs"
         output.mkdir(exist_ok=True)
 
-        (output / f"b3_{question_id}.json").write_text(
+        (Path(output_path) if output_path else (output / f"b3_{question_id}.json")).write_text(
             json.dumps(
                 log, indent=2, ensure_ascii=False
             ),

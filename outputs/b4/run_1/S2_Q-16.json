@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-16",
+  "answer": "ANSWER: Yes, larger by | 23.9",
+  "samples": [
+    {
+      "answer": "Calculation: Ossbridge + Ossford = 1,284.6 + 846.2 = 2,130.8 km². Difference from Tarnvale = 2,130.8 − 2,106.9 = 23.9 km², so the combined area is larger.\n\nANSWER: Yes, larger by | 23.9 square kilometres",
+      "seconds": 1.3291,
+      "input_tokens": 2221,
+      "output_tokens": 78,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation: Ossbridge + Ossford = 1,284.6 + 846.2 = 2,130.8 km². Difference from Tarnvale = 2,130.8 − 2,106.9 = 23.9 km², so it is larger.\n\nANSWER: Yes, by 23.9 square kilometres",
+      "seconds": 1.3042,
+      "input_tokens": 2221,
+      "output_tokens": 74,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation: Ossbridge + Ossford = 1,284.6 + 846.2 = 2,130.8 km². Difference from Tarnvale = 2,130.8 − 2,106.9 = 23.9 km², so the combined area is larger.\n\nANSWER: Yes, larger by | 23.9 square kilometres",
+      "seconds": 1.1232,
+      "input_tokens": 2221,
+      "output_tokens": 78,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation: Ossbridge + Ossford = 1,284.6 + 846.2 = 2,130.8 km². Difference from Tarnvale = 2,130.8 − 2,106.9 = 23.9 km², so the combined area is larger.\n\nANSWER: Yes, by 23.9 square kilometres | 23.9",
+      "seconds": 1.3759,
+      "input_tokens": 2221,
+      "output_tokens": 81,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation: Ossbridge + Ossford = 1,284.6 + 846.2 = 2,130.8 km². Difference from Tarnvale = 2,130.8 − 2,106.9 = 23.9 km², so the combined area is larger.\n\nANSWER: Yes, larger by | 23.9 km²",
+      "seconds": 1.2724,
+      "input_tokens": 2221,
+      "output_tokens": 78,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11105,
+  "output_tokens": 389,
+  "seconds": 6.4051,
+  "temperature_supported": true,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": false,
+    "number_correct": true,
+    "parsed": {
+      "name": "Yes, larger by",
+      "number": "23.9"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

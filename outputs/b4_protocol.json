@@ -1,0 +1,10 @@
+{
+  "model": "gpt-5.6-luna",
+  "question_count": 20,
+  "full_runs": 2,
+  "s2_samples": 5,
+  "s2_temperature_requested": 0.7,
+  "reasoning_effort": "none",
+  "numeric_tolerance": "one last decimal unit",
+  "tie_break": "first tied answer"
+}

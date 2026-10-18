@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-15",
+  "answer": "Kelmarsh: 296.99999999999994 pupils per school; Redfen: 314.7 pupils per school. Difference = 17.70 pupils per school.  \nANSWER: Redfen | 17.70",
+  "samples": [
+    {
+      "answer": "Kelmarsh: 296.99999999999994 pupils per school; Redfen: 314.7 pupils per school. Difference = 17.70 pupils per school.  \nANSWER: Redfen | 17.70",
+      "seconds": 1.3373,
+      "input_tokens": 2202,
+      "output_tokens": 50,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2202,
+  "output_tokens": 50,
+  "seconds": 1.3373,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": false,
+    "parsed": {
+      "name": "Redfen",
+      "number": "17.70"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

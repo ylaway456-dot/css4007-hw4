@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-06",
+  "answer": "Yes, by 14,069 residents.  \nANSWER: Redfen and Kelmarsh combined vs Ossford | 14069",
+  "samples": [
+    {
+      "answer": "Yes, by 14,069 residents.  \nANSWER: Redfen and Kelmarsh combined vs Ossford | 14069",
+      "seconds": 1.0688,
+      "input_tokens": 2207,
+      "output_tokens": 29,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2207,
+  "output_tokens": 29,
+  "seconds": 1.0688,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": false,
+    "number_correct": true,
+    "parsed": {
+      "name": "Redfen and Kelmarsh combined vs Ossford",
+      "number": "14069"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

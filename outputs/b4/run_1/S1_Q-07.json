@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-07",
+  "answer": "Stonecairn has more paved road per 1,000 residents by 17.65 km per 1,000 residents.  \nANSWER: Stonecairn | 17.65",
+  "samples": [
+    {
+      "answer": "Stonecairn has more paved road per 1,000 residents by 17.65 km per 1,000 residents.  \nANSWER: Stonecairn | 17.65",
+      "seconds": 0.9677,
+      "input_tokens": 2211,
+      "output_tokens": 42,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2211,
+  "output_tokens": 42,
+  "seconds": 0.9677,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": false,
+    "number_correct": false,
+    "parsed": {
+      "name": "Stonecairn",
+      "number": "17.65"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

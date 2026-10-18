@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-11",
+  "answer": "ANSWER: Redfen | 56.10",
+  "samples": [
+    {
+      "answer": "Calculation summary:\n- Redfen: 3,147 ÷ 10 = 314.7 pupils per school\n- Ashgrove: 8,837 ÷ 24 = 368.208333…\n- Millbrook: 5,562 ÷ 15 = 370.8\n- Difference: 370.8 − 314.7 = 56.1\n\nANSWER: Redfen | 56.10",
+      "seconds": 1.3326,
+      "input_tokens": 2236,
+      "output_tokens": 92,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:\n- Redfen: 3,147 ÷ 10 = 314.7 pupils per school\n- Ashgrove: 8,837 ÷ 24 = 368.208333…\n- Millbrook: 5,562 ÷ 15 = 370.8\n- Lowest: Redfen; difference = 370.8 − 314.7 = 56.1 pupils per school\n\nANSWER: Redfen | 56.10",
+      "seconds": 1.5172,
+      "input_tokens": 2236,
+      "output_tokens": 100,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:\n- Redfen: 3,147 ÷ 10 = 314.7 pupils per school\n- Ashgrove: 8,837 ÷ 24 = 368.208333…\n- Millbrook: 5,562 ÷ 15 = 370.8 pupils per school\n- Lowest: Redfen; difference = 370.8 − 314.7 = 56.10 pupils per school\n\nANSWER: Redfen | 56.10",
+      "seconds": 1.7054,
+      "input_tokens": 2236,
+      "output_tokens": 103,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:\n- Redfen: 3,147 ÷ 10 = 314.7 pupils/school\n- Ashgrove: 8,837 ÷ 24 = 368.208333…\n- Millbrook: 5,562 ÷ 15 = 370.8 pupils/school\n- Difference: 370.8 − 314.7 = 56.1 pupils/school\n\nANSWER: Redfen | 56.10",
+      "seconds": 1.5442,
+      "input_tokens": 2236,
+      "output_tokens": 98,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:\n- Redfen: 3,147 ÷ 10 = 314.7 pupils per school\n- Ashgrove: 8,837 ÷ 24 = 368.208333… pupils per school\n- Millbrook: 5,562 ÷ 15 = 370.8 pupils per school\n- Difference: 370.8 − 314.7 = 56.1 pupils per school\n\nANSWER: Redfen | 56.10",
+      "seconds": 1.5306,
+      "input_tokens": 2236,
+      "output_tokens": 102,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11180,
+  "output_tokens": 495,
+  "seconds": 7.6304,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Redfen",
+      "number": "56.10"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

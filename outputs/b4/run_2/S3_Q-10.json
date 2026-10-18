@@ -1,0 +1,148 @@
+{
+  "question_id": "Q-10",
+  "model": "gpt-5.6-luna",
+  "max_rounds": 8,
+  "status": "answered",
+  "answer": "Stonecairn is older than Coldharbour by 8 years.\n\nANSWER: Stonecairn | 8.0",
+  "api_rounds": [
+    {
+      "round": 1,
+      "seconds": 1.319,
+      "input_tokens": 491,
+      "output_tokens": 62
+    },
+    {
+      "round": 2,
+      "seconds": 0.793,
+      "input_tokens": 622,
+      "output_tokens": 20
+    },
+    {
+      "round": 3,
+      "seconds": 1.243,
+      "input_tokens": 665,
+      "output_tokens": 29
+    }
+  ],
+  "tool_calls": [
+    {
+      "round": 1,
+      "tool_call_id": "call_PcFeAdjs1uTcdicReArNidcj",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Stonecairn\", \"field\": \"founded_year\"}",
+      "result": {
+        "ok": true,
+        "value": 1837,
+        "unit": "year",
+        "source_id": "NR-06"
+      },
+      "seconds": 0.000282
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_er3dqoSQrGZNful2k1RB6ail",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Coldharbour\", \"field\": \"founded_year\"}",
+      "result": {
+        "ok": true,
+        "value": 1845,
+        "unit": "year",
+        "source_id": "NR-12"
+      },
+      "seconds": 0.000147
+    },
+    {
+      "round": 2,
+      "tool_call_id": "call_OwdjjbiMedfI6fOHzJ5ShC97",
+      "tool": "calculate",
+      "arguments": "{\"expression\":\"1845-1837\"}",
+      "result": {
+        "ok": true,
+        "value": 8.0
+      },
+      "seconds": 7e-05
+    }
+  ],
+  "input_tokens": 1778,
+  "output_tokens": 111,
+  "error": null,
+  "total_seconds": 3.356,
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Answer questions about the fictional Nine Rivers Region. You do not have the documents. Get facts using lookup and perform arithmetic with calculate. Do not invent figures. Use 2025 figures, current profiles and corrections when relevant. Do not round intermediate results. Finish with a line exactly like: ANSWER: Name | 0.0. If reliable facts are missing, say UNANSWERED."
+    },
+    {
+      "role": "user",
+      "content": "Which district is older, Stonecairn or Coldharbour, and how many years older is it than the other?\nRound the final number to 0 decimal places."
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_PcFeAdjs1uTcdicReArNidcj",
+          "function": {
+            "arguments": "{\"district\": \"Stonecairn\", \"field\": \"founded_year\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_er3dqoSQrGZNful2k1RB6ail",
+          "function": {
+            "arguments": "{\"district\": \"Coldharbour\", \"field\": \"founded_year\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_PcFeAdjs1uTcdicReArNidcj",
+      "content": "{\"ok\": true, \"value\": 1837, \"unit\": \"year\", \"source_id\": \"NR-06\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_er3dqoSQrGZNful2k1RB6ail",
+      "content": "{\"ok\": true, \"value\": 1845, \"unit\": \"year\", \"source_id\": \"NR-12\"}"
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_OwdjjbiMedfI6fOHzJ5ShC97",
+          "function": {
+            "arguments": "{\"expression\":\"1845-1837\"}",
+            "name": "calculate"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_OwdjjbiMedfI6fOHzJ5ShC97",
+      "content": "{\"ok\": true, \"value\": 8.0}"
+    },
+    {
+      "content": "Stonecairn is older than Coldharbour by 8 years.\n\nANSWER: Stonecairn | 8.0",
+      "role": "assistant",
+      "annotations": []
+    }
+  ],
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Stonecairn",
+      "number": "8.0"
+    }
+  },
+  "strategy": "S3",
+  "run_number": 2
+}

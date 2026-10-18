@@ -1,0 +1,68 @@
+[
+  {
+    "run": 1,
+    "strategy": "S1",
+    "correct": 8,
+    "unanswered": 1,
+    "input_tokens": 44140,
+    "output_tokens": 1338,
+    "median_seconds": 1.337,
+    "total_seconds": 27.377,
+    "estimated_cost_usd": 0.0104336
+  },
+  {
+    "run": 1,
+    "strategy": "S2",
+    "correct": 14,
+    "unanswered": 0,
+    "input_tokens": 222700,
+    "output_tokens": 11085,
+    "median_seconds": 7.524,
+    "total_seconds": 155.767,
+    "estimated_cost_usd": 0.057842
+  },
+  {
+    "run": 1,
+    "strategy": "S3",
+    "correct": 15,
+    "unanswered": 0,
+    "input_tokens": 46738,
+    "output_tokens": 4153,
+    "median_seconds": 3.875,
+    "total_seconds": 81.627,
+    "estimated_cost_usd": 0.0143312
+  },
+  {
+    "run": 2,
+    "strategy": "S1",
+    "correct": 8,
+    "unanswered": 4,
+    "input_tokens": 44140,
+    "output_tokens": 1315,
+    "median_seconds": 1.391,
+    "total_seconds": 28.078,
+    "estimated_cost_usd": 0.010406
+  },
+  {
+    "run": 2,
+    "strategy": "S2",
+    "correct": 15,
+    "unanswered": 0,
+    "input_tokens": 222700,
+    "output_tokens": 11109,
+    "median_seconds": 8.078,
+    "total_seconds": 159.222,
+    "estimated_cost_usd": 0.0578708
+  },
+  {
+    "run": 2,
+    "strategy": "S3",
+    "correct": 17,
+    "unanswered": 0,
+    "input_tokens": 49512,
+    "output_tokens": 4198,
+    "median_seconds": 3.875,
+    "total_seconds": 79.694,
+    "estimated_cost_usd": 0.01494
+  }
+]

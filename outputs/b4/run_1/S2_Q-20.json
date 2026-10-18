@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-20",
+  "answer": "ANSWER: Ashgrove | 2997",
+  "samples": [
+    {
+      "answer": "Calculation summary:  \n- Ossbridge: 9,284.5 million ÷ 52,904 = 175,493.16 tenge/resident  \n- Ashgrove: 10,488.1 million ÷ 58,760 = 178,489.96 tenge/resident  \n- Harrowfield: 16,021.7 million ÷ 90,212 = 177,592.33 tenge/resident  \n- Difference: 178,489.96 − 175,493.16 = 2,996.80 ≈ 2,997 tenge/resident  \n\nANSWER: Ashgrove | 2,997 tenge per resident",
+      "seconds": 1.985,
+      "input_tokens": 2234,
+      "output_tokens": 144,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Ossbridge: 9,284.5 million ÷ 52,904 = 175,490.32 tenge/resident  \n- Ashgrove: 10,488.1 million ÷ 58,760 = 178,490.81 tenge/resident  \n- Harrowfield: 16,021.7 million ÷ 90,212 = 177,593.22 tenge/resident  \n- Difference: 178,490.81 − 175,490.32 = 3,000.49 ≈ 3,000 tenge/resident  \n\nANSWER: Ashgrove | 3000",
+      "seconds": 2.0179,
+      "input_tokens": 2234,
+      "output_tokens": 139,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Ossbridge: 9,284.5 million ÷ 52,904 = 175,491.19 tenge/resident  \n- Ashgrove: 10,488.1 million ÷ 58,760 = 178,485.02 tenge/resident  \n- Harrowfield: 16,021.7 million ÷ 90,212 = 177,601.43 tenge/resident  \n- Difference: 178,485.02 − 175,491.19 = 2,993.83 ≈ 2,994 tenge/resident  \n\nANSWER: Ashgrove | 2,994 tenge per resident",
+      "seconds": 1.919,
+      "input_tokens": 2234,
+      "output_tokens": 144,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Ossbridge: 9,284.5 million ÷ 52,904 = 175,485.57 tenge/resident  \n- Ashgrove: 10,488.1 million ÷ 58,760 = 178,489.79 tenge/resident  \n- Harrowfield: 16,021.7 million ÷ 90,212 = 177,598.28 tenge/resident  \n- Difference: 178,489.79 − 175,485.57 = 3,004.22 ≈ 3,004 tenge/resident  \n\nANSWER: Ashgrove | 3004",
+      "seconds": 1.6613,
+      "input_tokens": 2234,
+      "output_tokens": 139,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Ossbridge: 9,284.5 million ÷ 52,904 = 175,495.42 tenge/resident  \n- Ashgrove: 10,488.1 million ÷ 58,760 = 178,491.66 tenge/resident  \n- Harrowfield: 16,021.7 million ÷ 90,212 = 177,593.22 tenge/resident  \n- Difference: 178,491.66 − 175,495.42 = 2,996.24 tenge/resident, rounded to 0 decimals = 2,996\n\nANSWER: Ashgrove | 2,996 tenge per resident",
+      "seconds": 1.8946,
+      "input_tokens": 2234,
+      "output_tokens": 149,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11170,
+  "output_tokens": 715,
+  "seconds": 9.4782,
+  "temperature_supported": true,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": false,
+    "parsed": {
+      "name": "Ashgrove",
+      "number": "2997"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

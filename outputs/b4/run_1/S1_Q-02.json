@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-02",
+  "answer": "Tarnvale grew by 6.21%, while Harrowfield grew by 7.90%. Harrowfield grew faster by 1.69 percentage points.\n\nANSWER: Harrowfield | 1.69 percentage points",
+  "samples": [
+    {
+      "answer": "Tarnvale grew by 6.21%, while Harrowfield grew by 7.90%. Harrowfield grew faster by 1.69 percentage points.\n\nANSWER: Harrowfield | 1.69 percentage points",
+      "seconds": 1.2504,
+      "input_tokens": 2207,
+      "output_tokens": 49,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2207,
+  "output_tokens": 49,
+  "seconds": 1.2504,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Harrowfield",
+      "number": "1.69"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

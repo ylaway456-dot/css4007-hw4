@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-17",
+  "answer": "ANSWER: Harrowfield | 887",
+  "samples": [
+    {
+      "answer": "Calculation summary:  \n- Harrowfield: \\(7{,}146{,}000\\text{ m}^3 \\times 142.35 \\div 90{,}212 = 11{,}278.29\\) tenge/resident  \n- Ossbridge: \\(3{,}862{,}000\\text{ m}^3 \\times 142.35 \\div 52{,}904 = 10{,}391.04\\) tenge/resident  \n- Difference: \\(11{,}278.29 - 10{,}391.04 = 887.25\\), rounded to 0 decimals = 887 tenge/resident  \n\nANSWER: Harrowfield | 887 tenge per resident",
+      "seconds": 2.1791,
+      "input_tokens": 2233,
+      "output_tokens": 162,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Water cost per resident = water use (m³) × 142.35 ÷ 2025 population.\n\nHarrowfield: 7,146 ML = 7,146,000 m³; cost per resident = 7,146,000 × 142.35 ÷ 90,212 = 11,278.49 tenge.  \nOssbridge: 3,862 ML = 3,862,000 m³; cost per resident = 3,862,000 × 142.35 ÷ 52,904 = 10,388.50 tenge.  \nDifference = 11,278.49 − 10,388.50 = 889.99, rounded to 890 tenge per resident.\n\nANSWER: Harrowfield | 890",
+      "seconds": 2.0842,
+      "input_tokens": 2233,
+      "output_tokens": 166,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \nHarrowfield: \\(7{,}146{,}000\\text{ m}^3 \\times 142.35 \\div 90{,}212 = 11{,}276.75\\) tenge/resident.  \nOssbridge: \\(3{,}862{,}000\\text{ m}^3 \\times 142.35 \\div 52{,}904 = 10{,}390.14\\) tenge/resident.  \nDifference: \\(11{,}276.75 - 10{,}390.14 = 886.61\\), rounded to 0 decimals: 887 tenge/resident.\n\nANSWER: Harrowfield | 887 tenge per resident",
+      "seconds": 2.3147,
+      "input_tokens": 2233,
+      "output_tokens": 162,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \nHarrowfield: \\(7,146,000\\text{ m}^3 \\times 142.35 \\div 90,212 = 11,277.13\\) tenge/resident.  \nOssbridge: \\(3,862,000\\text{ m}^3 \\times 142.35 \\div 52,904 = 10,391.13\\) tenge/resident.  \nDifference: \\(11,277.13 - 10,391.13 = 886.00\\), rounded to 0 decimals.\n\nANSWER: Harrowfield | 886 tenge per resident",
+      "seconds": 1.8058,
+      "input_tokens": 2233,
+      "output_tokens": 135,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Water use per resident:\n- Harrowfield: \\(7{,}146{,}000 \\div 90{,}212 = 79.2635\\) m³/person\n- Ossbridge: \\(3{,}862{,}000 \\div 52{,}904 = 72.9537\\) m³/person\n\nDifference: \\((79.2635 - 72.9537) \\times 142.35 = 898.6\\) tenge, rounded to 0 decimals.\n\nANSWER: Harrowfield | 899 tenge per resident more",
+      "seconds": 1.902,
+      "input_tokens": 2233,
+      "output_tokens": 127,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11165,
+  "output_tokens": 752,
+  "seconds": 10.2861,
+  "temperature_supported": true,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": false,
+    "parsed": {
+      "name": "Harrowfield",
+      "number": "887"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-15",
+  "answer": "ANSWER: Redfen | 17.61",
+  "samples": [
+    {
+      "answer": "Calculation summary:  \n- Kelmarsh: 3,268 ÷ 11 = 297.090909… pupils per school  \n- Redfen: 3,147 ÷ 10 = 314.7 pupils per school  \n- Difference: 314.7 − 297.090909… = 17.609090… ≈ 17.61\n\nANSWER: Redfen | 17.61 pupils per school more",
+      "seconds": 1.285,
+      "input_tokens": 2222,
+      "output_tokens": 93,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Kelmarsh: 3,268 ÷ 11 = 297.090909… pupils per school  \n- Redfen: 3,147 ÷ 10 = 314.7 pupils per school  \n- Difference: 314.7 − 297.090909… = 17.609090… ≈ 17.61\n\nANSWER: Redfen | 17.61 pupils per school more",
+      "seconds": 1.3691,
+      "input_tokens": 2222,
+      "output_tokens": 93,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation:  \n- Kelmarsh: 3,268 ÷ 11 = 296.婉7272727 pupils per school  \n- Redfen: 3,147 ÷ 10 = 314.7 pupils per school  \n- Difference: 314.7 − 296.7272727 = 17.9727273 ≈ 17.97\n\nRedfen has more pupils per school by 17.97 pupils per school.\n\nANSWER: Redfen | 17.97",
+      "seconds": 1.5642,
+      "input_tokens": 2222,
+      "output_tokens": 106,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation: Kelmarsh = 3,268 ÷ 11 = 296.999... pupils/school. Redfen = 3,147 ÷ 10 = 314.7 pupils/school. Difference = 314.7 − 296.999... = 17.700... ≈ 17.70.\n\nANSWER: Redfen | 17.70 pupils per school more",
+      "seconds": 1.2975,
+      "input_tokens": 2222,
+      "output_tokens": 85,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Kelmarsh: 3,268 ÷ 11 = 297.090909… pupils per school  \n- Redfen: 3,147 ÷ 10 = 314.7 pupils per school  \n- Difference: 314.7 − 297.090909… = 17.609090… ≈ 17.61\n\nANSWER: Redfen | 17.61 pupils per school more",
+      "seconds": 1.2295,
+      "input_tokens": 2222,
+      "output_tokens": 93,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11110,
+  "output_tokens": 470,
+  "seconds": 6.7455,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Redfen",
+      "number": "17.61"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

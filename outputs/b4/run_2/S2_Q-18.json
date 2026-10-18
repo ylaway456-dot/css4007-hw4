@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-18",
+  "answer": "ANSWER: Yes | 40014",
+  "samples": [
+    {
+      "answer": "Millbrook’s growth rate from 2020 to 2025:\n\n\\[\n\\frac{37,203-34,590}{34,590}=\\frac{2,613}{34,590}\n\\]\n\nProjected 2030 population:\n\n\\[\n37,203\\left(1+\\frac{2,613}{34,590}\\right)\\approx 40,013.7\n\\]\n\nRounded to 0 decimals: 40,014 residents, which exceeds 40,000.\n\nANSWER: Yes | 40,014",
+      "seconds": 1.773,
+      "input_tokens": 2244,
+      "output_tokens": 112,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Millbrook’s growth rate from 2020 to 2025:\n\n\\[\n\\frac{37,203-34,590}{34,590}=\\frac{2,613}{34,590}\n\\]\n\nProjected 2030 population:\n\n\\[\n37,203\\left(1+\\frac{2,613}{34,590}\\right)=40,013.4\n\\]\n\nRounded to 0 decimal places: 40,013 residents, which exceeds 40,000.\n\nANSWER: Yes | 40,013",
+      "seconds": 1.6982,
+      "input_tokens": 2244,
+      "output_tokens": 111,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Millbrook’s growth rate from 2020 to 2025:\n\n\\[\n\\frac{37,203-34,590}{34,590}=\\frac{2,613}{34,590}\n\\]\n\nProjected 2030 population:\n\n\\[\n37,203\\left(1+\\frac{2,613}{34,590}\\right)\\approx 40,014.64\n\\]\n\nThis exceeds 40,000 residents. Rounded to 0 decimals: 40,015.\n\nANSWER: yes | 40015",
+      "seconds": 2.0733,
+      "input_tokens": 2244,
+      "output_tokens": 111,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Millbrook’s growth factor from 2020 to 2025 is:\n\n37,203 ÷ 34,590 = 1.075542...  \n\nProjected 2030 population:\n\n37,203 × 1.075542... = 40,014.4, which rounds to 40,014.\n\nThis exceeds 40,000 residents.\n\nANSWER: yes | 40014",
+      "seconds": 1.5365,
+      "input_tokens": 2244,
+      "output_tokens": 82,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation: Growth factor = 37,203 ÷ 34,590 = 1.075600; projected 2030 population = 37,203 × 1.075600 = 40,016.1, which rounds to 40,016. This exceeds 40,000.\n\nANSWER: Millbrook | yes, 40,016",
+      "seconds": 1.3246,
+      "input_tokens": 2244,
+      "output_tokens": 75,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11220,
+  "output_tokens": 491,
+  "seconds": 8.4059,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Yes",
+      "number": "40014"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

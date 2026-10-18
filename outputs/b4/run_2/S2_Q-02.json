@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-02",
+  "answer": "ANSWER: Harrowfield | 1.69",
+  "samples": [
+    {
+      "answer": "Calculation summary:\n- Tarnvale: \\((71,388 - 67,214) / 67,214 \\times 100 = 6.21\\%\\)\n- Harrowfield: \\((90,212 - 83,609) / 83,609 \\times 100 = 7.90\\%\\)\n- Difference: \\(7.90 - 6.21 = 1.69\\) percentage points\n\nANSWER: Harrowfield | 1.69 percentage points",
+      "seconds": 1.3539,
+      "input_tokens": 2227,
+      "output_tokens": 105,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:\n- Tarnvale growth: \\((71,388 - 67,214) / 67,214 \\times 100 = 6.21\\%\\)\n- Harrowfield growth: \\((90,212 - 83,609) / 83,609 \\times 100 = 7.90\\%\\)\n- Difference: \\(7.90 - 6.21 = 1.69\\) percentage points\n\nANSWER: Harrowfield | 1.69 percentage points",
+      "seconds": 1.2232,
+      "input_tokens": 2227,
+      "output_tokens": 107,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:\n- Tarnvale growth: \\((71,388 - 67,214) / 67,214 \\times 100 = 6.21\\%\\)\n- Harrowfield growth: \\((90,212 - 83,609) / 83,609 \\times 100 = 7.90\\%\\)\n- Difference: \\(7.90 - 6.21 = 1.69\\) percentage points\n\nANSWER: Harrowfield | 1.69 percentage points",
+      "seconds": 1.2601,
+      "input_tokens": 2227,
+      "output_tokens": 107,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Tarnvale: \\((71,388 - 67,214) / 67,214 \\times 100 = 6.21\\%\\)  \n- Harrowfield: \\((90,212 - 83,609) / 83,609 \\times 100 = 7.90\\%\\)  \n- Difference: \\(7.90 - 6.21 = 1.69\\) percentage points  \nHarrowfield grew faster.\n\nANSWER: Harrowfield | 1.69 percentage points",
+      "seconds": 1.5461,
+      "input_tokens": 2227,
+      "output_tokens": 114,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:\n- Tarnvale growth: \\((71,388 - 67,214) / 67,214 \\times 100 = 6.21\\%\\)\n- Harrowfield growth: \\((90,212 - 83,609) / 83,609 \\times 100 = 7.90\\%\\)\n- Difference: \\(7.90 - 6.21 = 1.69\\) percentage points\n\nANSWER: Harrowfield | 1.69 percentage points",
+      "seconds": 1.2813,
+      "input_tokens": 2227,
+      "output_tokens": 107,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11135,
+  "output_tokens": 540,
+  "seconds": 6.6649,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Harrowfield",
+      "number": "1.69"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

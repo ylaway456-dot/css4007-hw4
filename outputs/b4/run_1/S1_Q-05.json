@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-05",
+  "answer": "Stonecairn had the larger 2025 budget per resident by 20,359.04 tenge per resident (rounded: 20,359).\n\nANSWER: Stonecairn | 20,359",
+  "samples": [
+    {
+      "answer": "Stonecairn had the larger 2025 budget per resident by 20,359.04 tenge per resident (rounded: 20,359).\n\nANSWER: Stonecairn | 20,359",
+      "seconds": 1.4794,
+      "input_tokens": 2203,
+      "output_tokens": 46,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2203,
+  "output_tokens": 46,
+  "seconds": 1.4794,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": false,
+    "number_correct": false,
+    "parsed": {
+      "name": "Stonecairn",
+      "number": "20359"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

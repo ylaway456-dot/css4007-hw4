@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-06",
+  "answer": "ANSWER: yes | 14069",
+  "samples": [
+    {
+      "answer": "Calculation: Redfen + Kelmarsh = 20,934 + 24,117 = 45,051. Difference from Ossford = 45,051 − 30,982 = 14,069 residents. The combined population is larger.\n\nANSWER: Yes, by 14,069 residents",
+      "seconds": 1.2705,
+      "input_tokens": 2227,
+      "output_tokens": 64,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation: Redfen + Kelmarsh = 20,934 + 24,117 = 45,051. Difference from Ossford = 45,051 − 30,982 = 14,069. The combined population is larger.\n\nANSWER: yes | 14069",
+      "seconds": 1.3569,
+      "input_tokens": 2227,
+      "output_tokens": 60,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation: Redfen + Kelmarsh = 20,934 + 24,117 = 45,051. Difference from Ossford = 45,051 − 30,982 = 14,069 residents. Therefore, the combined population is larger.\n\nANSWER: Yes, by 14,069 residents",
+      "seconds": 1.0398,
+      "input_tokens": 2227,
+      "output_tokens": 66,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation: Redfen + Kelmarsh = 20,934 + 24,117 = 45,051. Difference from Ossford = 45,051 − 30,982 = 14,069 residents. The combined population is larger.\n\nANSWER: yes | 14069",
+      "seconds": 1.3648,
+      "input_tokens": 2227,
+      "output_tokens": 61,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation: Redfen + Kelmarsh = 20,934 + 24,117 = 45,051. Difference from Ossford = 45,051 − 30,982 = 14,069 residents. The combined population is larger.\n\nANSWER: Yes, by 14,069 residents",
+      "seconds": 1.1119,
+      "input_tokens": 2227,
+      "output_tokens": 64,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11135,
+  "output_tokens": 315,
+  "seconds": 6.1442,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "yes",
+      "number": "14069"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

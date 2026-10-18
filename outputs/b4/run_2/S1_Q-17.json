@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-17",
+  "answer": "Harrowfield households paid more: water cost per resident was 11,270.19 tenge versus 10,389.53 tenge in Ossbridge, a difference of 881 tenge per resident.\n\nANSWER: Harrowfield | 881",
+  "samples": [
+    {
+      "answer": "Harrowfield households paid more: water cost per resident was 11,270.19 tenge versus 10,389.53 tenge in Ossbridge, a difference of 881 tenge per resident.\n\nANSWER: Harrowfield | 881",
+      "seconds": 1.2558,
+      "input_tokens": 2213,
+      "output_tokens": 54,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2213,
+  "output_tokens": 54,
+  "seconds": 1.2558,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": false,
+    "parsed": {
+      "name": "Harrowfield",
+      "number": "881"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

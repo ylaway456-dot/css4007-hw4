@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-09",
+  "answer": "Brightwater has the higher 2025 population density.\n\nBrightwater: 44,675 ÷ 921.4 = 48.5 residents/km²  \nMillbrook: 37,203 ÷ 758.6 = 49.0 residents/km²  \nDifference: 0.5 residents/km²\n\nANSWER: Millbrook | 0.5 residents per square kilometre",
+  "samples": [
+    {
+      "answer": "Brightwater has the higher 2025 population density.\n\nBrightwater: 44,675 ÷ 921.4 = 48.5 residents/km²  \nMillbrook: 37,203 ÷ 758.6 = 49.0 residents/km²  \nDifference: 0.5 residents/km²\n\nANSWER: Millbrook | 0.5 residents per square kilometre",
+      "seconds": 1.516,
+      "input_tokens": 2201,
+      "output_tokens": 82,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2201,
+  "output_tokens": 82,
+  "seconds": 1.516,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Millbrook",
+      "number": "0.5"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

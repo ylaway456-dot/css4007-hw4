@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-20",
+  "answer": "Harrowfield had the largest 2025 budget per resident. It exceeded Ashgrove, the lowest, by 9,780 tenge per resident.\n\nANSWER: Harrowfield | 9780",
+  "samples": [
+    {
+      "answer": "Harrowfield had the largest 2025 budget per resident. It exceeded Ashgrove, the lowest, by 9,780 tenge per resident.\n\nANSWER: Harrowfield | 9780",
+      "seconds": 1.1458,
+      "input_tokens": 2214,
+      "output_tokens": 44,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2214,
+  "output_tokens": 44,
+  "seconds": 1.1458,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": false,
+    "number_correct": false,
+    "parsed": {
+      "name": "Harrowfield",
+      "number": "9780"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

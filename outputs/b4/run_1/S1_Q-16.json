@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-16",
+  "answer": "Yes. Ossbridge and Ossford combined: 2,130.8 km²; Tarnvale: 2,106.9 km². They differ by 23.9 km².\n\nANSWER: Combined Ossbridge and Ossford area vs Tarnvale | 23.9 km²",
+  "samples": [
+    {
+      "answer": "Yes. Ossbridge and Ossford combined: 2,130.8 km²; Tarnvale: 2,106.9 km². They differ by 23.9 km².\n\nANSWER: Combined Ossbridge and Ossford area vs Tarnvale | 23.9 km²",
+      "seconds": 1.4854,
+      "input_tokens": 2201,
+      "output_tokens": 62,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2201,
+  "output_tokens": 62,
+  "seconds": 1.4854,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": false,
+    "number_correct": true,
+    "parsed": {
+      "name": "Combined Ossbridge and Ossford area vs Tarnvale",
+      "number": "23.9"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

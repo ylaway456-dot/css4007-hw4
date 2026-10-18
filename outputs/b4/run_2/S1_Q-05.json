@@ -1,0 +1,25 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-05",
+  "answer": "Stonecairn had the larger 2025 budget per resident by 11,866.50 tenge per resident (193,176.47 versus 207,042.97? Wait).",
+  "samples": [
+    {
+      "answer": "Stonecairn had the larger 2025 budget per resident by 11,866.50 tenge per resident (193,176.47 versus 207,042.97? Wait).",
+      "seconds": 1.6286,
+      "input_tokens": 2203,
+      "output_tokens": 43,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2203,
+  "output_tokens": 43,
+  "seconds": 1.6286,
+  "score": {
+    "correct": false,
+    "unanswered": true
+  },
+  "status": "unanswered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

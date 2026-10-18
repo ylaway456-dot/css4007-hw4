@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-07",
+  "answer": "Coldharbour has more paved road per 1,000 residents.\n\nColdharbour: \\(598.3 \\div 11,407 \\times 1,000 = 52.45\\) km  \nStonecairn: \\(506.8 \\div 14,926 \\times 1,000 = 33.96\\) km  \nDifference: \\(52.45 - 33.96 = 18.49\\) km per 1,000 residents\n\nANSWER: Coldharbour | 18.49 km per 1,000 residents കൂടുത еила",
+  "samples": [
+    {
+      "answer": "Coldharbour has more paved road per 1,000 residents.\n\nColdharbour: \\(598.3 \\div 11,407 \\times 1,000 = 52.45\\) km  \nStonecairn: \\(506.8 \\div 14,926 \\times 1,000 = 33.96\\) km  \nDifference: \\(52.45 - 33.96 = 18.49\\) km per 1,000 residents\n\nANSWER: Coldharbour | 18.49 km per 1,000 residents കൂടുത еила",
+      "seconds": 1.6923,
+      "input_tokens": 2211,
+      "output_tokens": 121,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2211,
+  "output_tokens": 121,
+  "seconds": 1.6923,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Coldharbour",
+      "number": "18.49"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-17",
+  "answer": "ANSWER: Harrowfield | 888",
+  "samples": [
+    {
+      "answer": "Calculation summary:  \n- Harrowfield: \\(7{,}146{,}000\\text{ m}^3 \\times 142.35 \\div 90{,}212 = 11{,}278.65\\) tenge per resident  \n- Ossbridge: \\(3{,}862{,}000\\text{ m}^3 \\times 142.35 \\div 52{,}904 = 10{,}390.70\\) tenge per resident  \n- Difference: \\(11{,}278.65 - 10{,}390.70 = 887.95\\), rounded to 0 decimals = 888 tenge\n\nANSWER: Harrowfield | 888 tenge per resident more",
+      "seconds": 1.8689,
+      "input_tokens": 2233,
+      "output_tokens": 161,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Harrowfield: \\(7,146,000\\text{ m}^3 \\times 142.35 \\div 90,212 = 11,276.63\\) tenge/resident  \n- Ossbridge: \\(3,862,000\\text{ m}^3 \\times 142.35 \\div 52,904 = 10,389.22\\) tenge/resident  \n- Difference: \\(11,276.63 - 10,389.22 = 887.41\\), rounded to 887 tenge/resident.\n\nANSWER: Harrowfield | 887",
+      "seconds": 1.715,
+      "input_tokens": 2233,
+      "output_tokens": 134,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Harrowfield: \\(7,146,000\\text{ m}^3 \\times 142.35 \\div 90,212 = 11,276.64\\) tenge/resident  \n- Ossbridge: \\(3,862,000\\text{ m}^3 \\times 142.35 \\div 52,904 = 10,391.61\\) tenge/resident  \n- Difference: \\(11,276.64 - 10,391.61 = 885.03\\), rounded to 0 decimals = 885 tenge/resident.\n\nANSWER: Harrowfield | 885 tenge per resident more",
+      "seconds": 1.9704,
+      "input_tokens": 2233,
+      "output_tokens": 143,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \nHarrowfield: \\(7,146,000\\text{ m}^3 \\times 142.35 \\div 90,212 = 11,274.94\\) tenge/resident.  \nOssbridge: \\(3,862,000\\text{ m}^3 \\times 142.35 \\div 52,904 = 10,391.59\\) tenge/resident.  \nDifference: \\(11,274.94 - 10,391.59 = 883.35\\), rounded to 883 tenge/resident.\n\nANSWER: Harrowfield | 883 tenge per resident more",
+      "seconds": 1.6999,
+      "input_tokens": 2233,
+      "output_tokens": 139,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Harrowfield: \\(7{,}146{,}000 \\text{ m}^3 \\times 142.35 \\div 90{,}212 = 11{,}277.68\\) tenge/resident  \n- Ossbridge: \\(3{,}862{,}000 \\text{ m}^3 \\times 142.35 \\div 52{,}904 = 10{,}391.79\\) tenge/resident  \n- Difference: \\(11{,}277.68 - 10{,}391.79 = 885.89 \\approx 886\\) tenge/resident  \n\nANSWER: Harrowfield | 886",
+      "seconds": 1.7947,
+      "input_tokens": 2233,
+      "output_tokens": 154,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11165,
+  "output_tokens": 731,
+  "seconds": 9.0491,
+  "temperature_supported": true,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": false,
+    "parsed": {
+      "name": "Harrowfield",
+      "number": "888"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

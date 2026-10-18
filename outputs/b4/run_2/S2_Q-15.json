@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-15",
+  "answer": "ANSWER: Redfen | 17.70",
+  "samples": [
+    {
+      "answer": "Calculation summary:  \nKelmarsh: 3,268 ÷ 11 = 296.999... pupils per school.  \nRedfen: 3,147 ÷ 10 = 314.7 pupils per school.  \nDifference: 314.7 − 296.999... = 17.70 pupils per school.\n\nANSWER: Redfen | 17.70 pupils per school more",
+      "seconds": 1.6381,
+      "input_tokens": 2222,
+      "output_tokens": 85,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation:\n- Kelmarsh: 3,268 ÷ 11 = 296.909090… pupils per school\n- Redfen: 3,147 ÷ 10 = 314.7 pupils per school\n- Difference: 314.7 − 296.909090… = 17.790909… ≈ 17.79\n\nANSWER: Redfen | 17.79 pupils per school more",
+      "seconds": 1.5605,
+      "input_tokens": 2222,
+      "output_tokens": 91,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Kelmarsh: 3,268 ÷ 11 = 297.090909… pupils per school  \n- Redfen: 3,147 ÷ 10 = 314.7 pupils per school  \n- Difference: 314.7 − 297.090909… = 17.609090… ≈ 17.61\n\nANSWER: Redfen | 17.61 pupils per school more",
+      "seconds": 1.8629,
+      "input_tokens": 2222,
+      "output_tokens": 93,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \nKelmarsh: 3,268 ÷ 11 = 296.​​181818… pupils per school.  \nRedfen: 3,147 ÷ 10 = 314.7 pupils per school.  \nDifference: 314.7 − 296.181818… = 18.518181… ≈ 18.52 pupils per school.\n\nANSWER: Redfen | 18.52 pupils per school more than Kelmarsh",
+      "seconds": 2.1261,
+      "input_tokens": 2222,
+      "output_tokens": 100,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Kelmarsh: 3,268 ÷ 11 = 296.363636… pupils per school  \n- Redfen: 3,147 ÷ 10 = 314.7 pupils per school  \n- Difference: 314.7 − 296.363636… = 18.336363… ≈ 18.34\n\nANSWER: Redfen | 18.34 pupils per school more",
+      "seconds": 1.5396,
+      "input_tokens": 2222,
+      "output_tokens": 93,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11110,
+  "output_tokens": 462,
+  "seconds": 8.7279,
+  "temperature_supported": true,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": false,
+    "parsed": {
+      "name": "Redfen",
+      "number": "17.70"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-06",
+  "answer": "ANSWER: Yes | 14069",
+  "samples": [
+    {
+      "answer": "Calculation: Redfen + Kelmarsh = 20,934 + 24,117 = 45,051. Difference from Ossford = 45,051 − 30,982 = 14,069 residents. The combined population is larger.\n\nANSWER: Yes, by 14,069 residents",
+      "seconds": 1.3544,
+      "input_tokens": 2227,
+      "output_tokens": 64,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation: Redfen + Kelmarsh = 20,934 + 24,117 = 45,051. Difference from Ossford = 45,051 − 30,982 = 14,069. The combined population is larger.\n\nANSWER: Yes | 14,069 residents",
+      "seconds": 1.2175,
+      "input_tokens": 2227,
+      "output_tokens": 62,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation: Redfen + Kelmarsh = 20,934 + 24,117 = 45,051. Difference from Ossford = 45,051 − 30,982 = 14,069 residents. The combined population is larger.\n\nANSWER: Yes, by 14,069 residents",
+      "seconds": 1.185,
+      "input_tokens": 2227,
+      "output_tokens": 64,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation: Redfen + Kelmarsh = 20,934 + 24,117 = 45,051. Difference from Ossford = 45,051 − 30,982 = 14,069 residents. Therefore, the combined population is larger.\n\nANSWER: Yes, by 14,069 residents",
+      "seconds": 1.5796,
+      "input_tokens": 2227,
+      "output_tokens": 66,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation: Redfen + Kelmarsh = 20,934 + 24,117 = 45,051. Difference from Ossford = 45,051 − 30,982 = 14,069. Therefore, the combined population is larger.\n\nANSWER: Yes, by 14,069 residents | 14069",
+      "seconds": 1.2875,
+      "input_tokens": 2227,
+      "output_tokens": 69,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11135,
+  "output_tokens": 325,
+  "seconds": 6.6243,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Yes",
+      "number": "14069"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

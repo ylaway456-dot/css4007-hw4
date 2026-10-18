@@ -1,0 +1,200 @@
+{
+  "question_id": "Q-04",
+  "model": "gpt-5.6-luna",
+  "max_rounds": 8,
+  "status": "answered",
+  "answer": "Millbrook has more pupils per school by **2.59 pupils per school**.\n\nANSWER: Millbrook | 2.59",
+  "api_rounds": [
+    {
+      "round": 1,
+      "seconds": 1.344,
+      "input_tokens": 495,
+      "output_tokens": 97
+    },
+    {
+      "round": 2,
+      "seconds": 0.978,
+      "input_tokens": 717,
+      "output_tokens": 30
+    },
+    {
+      "round": 3,
+      "seconds": 1.154,
+      "input_tokens": 774,
+      "output_tokens": 29
+    }
+  ],
+  "tool_calls": [
+    {
+      "round": 1,
+      "tool_call_id": "call_ygViHOZ7Psy84av8NNOHjSuE",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Ashgrove\", \"field\": \"pupils\"}",
+      "result": {
+        "ok": true,
+        "value": 8837,
+        "unit": "pupils",
+        "source_id": "NR-10"
+      },
+      "seconds": 0.000494
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_qjDryjqNrsE2lhtQKQ8Advry",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Ashgrove\", \"field\": \"schools\"}",
+      "result": {
+        "ok": true,
+        "value": 24,
+        "unit": "schools",
+        "source_id": "NR-10"
+      },
+      "seconds": 0.000282
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_xU3IAINslSpyE4Xa6Ev0WFuE",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Millbrook\", \"field\": \"pupils\"}",
+      "result": {
+        "ok": true,
+        "value": 5562,
+        "unit": "pupils",
+        "source_id": "NR-11"
+      },
+      "seconds": 0.000248
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_87hOBewGxmTha8NyjNXoFE5n",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Millbrook\", \"field\": \"schools\"}",
+      "result": {
+        "ok": true,
+        "value": 15,
+        "unit": "schools",
+        "source_id": "NR-11"
+      },
+      "seconds": 0.000359
+    },
+    {
+      "round": 2,
+      "tool_call_id": "call_1kpwA2lmGG63y6nTQoW4gbOC",
+      "tool": "calculate",
+      "arguments": "{\"expression\":\"(8837 / 24) - (5562 / 15)\"}",
+      "result": {
+        "ok": true,
+        "value": -2.591666666666697
+      },
+      "seconds": 9.1e-05
+    }
+  ],
+  "input_tokens": 1986,
+  "output_tokens": 156,
+  "error": null,
+  "total_seconds": 3.478,
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Answer questions about the fictional Nine Rivers Region. You do not have the documents. Get facts using lookup and perform arithmetic with calculate. Do not invent figures. Use 2025 figures, current profiles and corrections when relevant. Do not round intermediate results. Finish with a line exactly like: ANSWER: Name | 0.0. If reliable facts are missing, say UNANSWERED."
+    },
+    {
+      "role": "user",
+      "content": "Which district has more pupils per school in 2025/26, Ashgrove or Millbrook, and by how many pupils per school?\nRound the final number to 2 decimal places."
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_ygViHOZ7Psy84av8NNOHjSuE",
+          "function": {
+            "arguments": "{\"district\": \"Ashgrove\", \"field\": \"pupils\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_qjDryjqNrsE2lhtQKQ8Advry",
+          "function": {
+            "arguments": "{\"district\": \"Ashgrove\", \"field\": \"schools\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_xU3IAINslSpyE4Xa6Ev0WFuE",
+          "function": {
+            "arguments": "{\"district\": \"Millbrook\", \"field\": \"pupils\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_87hOBewGxmTha8NyjNXoFE5n",
+          "function": {
+            "arguments": "{\"district\": \"Millbrook\", \"field\": \"schools\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_ygViHOZ7Psy84av8NNOHjSuE",
+      "content": "{\"ok\": true, \"value\": 8837, \"unit\": \"pupils\", \"source_id\": \"NR-10\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_qjDryjqNrsE2lhtQKQ8Advry",
+      "content": "{\"ok\": true, \"value\": 24, \"unit\": \"schools\", \"source_id\": \"NR-10\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_xU3IAINslSpyE4Xa6Ev0WFuE",
+      "content": "{\"ok\": true, \"value\": 5562, \"unit\": \"pupils\", \"source_id\": \"NR-11\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_87hOBewGxmTha8NyjNXoFE5n",
+      "content": "{\"ok\": true, \"value\": 15, \"unit\": \"schools\", \"source_id\": \"NR-11\"}"
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_1kpwA2lmGG63y6nTQoW4gbOC",
+          "function": {
+            "arguments": "{\"expression\":\"(8837 / 24) - (5562 / 15)\"}",
+            "name": "calculate"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_1kpwA2lmGG63y6nTQoW4gbOC",
+      "content": "{\"ok\": true, \"value\": -2.591666666666697}"
+    },
+    {
+      "content": "Millbrook has more pupils per school by **2.59 pupils per school**.\n\nANSWER: Millbrook | 2.59",
+      "role": "assistant",
+      "annotations": []
+    }
+  ],
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Millbrook",
+      "number": "2.59"
+    }
+  },
+  "strategy": "S3",
+  "run_number": 1
+}

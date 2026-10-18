@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-18",
+  "answer": "Millbrook grew by \\((37,203-34,590)/34,590 \\times 100\\%\\). Applying the same growth factor again gives \\(37,203 \\times (37,203/34,590) = 40,012.5\\), which rounds to 40,013. Yes, it exceeds 40,000.\n\nANSWER: Millbrook | 40013",
+  "samples": [
+    {
+      "answer": "Millbrook grew by \\((37,203-34,590)/34,590 \\times 100\\%\\). Applying the same growth factor again gives \\(37,203 \\times (37,203/34,590) = 40,012.5\\), which rounds to 40,013. Yes, it exceeds 40,000.\n\nANSWER: Millbrook | 40013",
+      "seconds": 1.7058,
+      "input_tokens": 2224,
+      "output_tokens": 83,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2224,
+  "output_tokens": 83,
+  "seconds": 1.7058,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": false,
+    "number_correct": true,
+    "parsed": {
+      "name": "Millbrook",
+      "number": "40013"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

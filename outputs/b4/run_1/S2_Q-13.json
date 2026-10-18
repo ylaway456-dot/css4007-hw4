@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-13",
+  "answer": "ANSWER: Coldharbour | 4.16",
+  "samples": [
+    {
+      "answer": "Calculation summary:\n- Ossford: \\((31,560-30,982)/31,560 \\times 100 = 1.83\\%\\)\n- Stonecairn: \\((15,473-14,926)/15,473 \\times 100 = 3.53\\%\\)\n- Coldharbour: \\((11,902-11,407)/11,902 \\times 100 = 4.16\\%\\)\n\nColdharbour lost the largest percentage.\n\nANSWER: Coldharbour | 4.16%",
+      "seconds": 1.3902,
+      "input_tokens": 2232,
+      "output_tokens": 115,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:\n- Ossford: \\((31,560-30,982)/31,560 \\times 100 = 1.83\\%\\)\n- Stonecairn: \\((15,473-14,926)/15,473 \\times 100 = 3.53\\%\\)\n- Coldharbour: \\((11,902-11,407)/11,902 \\times 100 = 4.16\\%\\)\n\nColdharbour lost the largest percentage.\n\nANSWER: Coldharbour | 4.16%",
+      "seconds": 1.2594,
+      "input_tokens": 2232,
+      "output_tokens": 115,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:\n- Ossford: \\((31,560-30,982)/31,560 \\times 100 = 1.83\\%\\)\n- Stonecairn: \\((15,473-14,926)/15,473 \\times 100 = 3.53\\%\\)\n- Coldharbour: \\((11,902-11,407)/11,902 \\times 100 = 4.16\\%\\)\n\nColdharbour lost the largest percentage.\n\nANSWER: Coldharbour | 4.16%",
+      "seconds": 1.3612,
+      "input_tokens": 2232,
+      "output_tokens": 115,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:\n- Ossford: \\((31,560-30,982)/31,560 \\times 100 = 1.83\\%\\)\n- Stonecairn: \\((15,473-14,926)/15,473 \\times 100 = 3.53\\%\\)\n- Coldharbour: \\((11,902-11,407)/11,902 \\times 100 = 4.16\\%\\)\n\nColdharbour lost the largest percentage.\n\nANSWER: Coldharbour | 4.16%",
+      "seconds": 1.2334,
+      "input_tokens": 2232,
+      "output_tokens": 115,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:\n- Ossford: \\((31,560 - 30,982) / 31,560 \\times 100 = 1.83\\%\\)\n- Stonecairn: \\((15,473 - 14,926) / 15,473 \\times 100 = 3.53\\%\\)\n- Coldharbour: \\((11,902 - 11,407) / 11,902 \\times 100 = 4.16\\%\\)\n\nColdharbour lost the largest percentage.\n\nANSWER: Coldharbour | 4.16%",
+      "seconds": 1.3787,
+      "input_tokens": 2232,
+      "output_tokens": 124,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11160,
+  "output_tokens": 584,
+  "seconds": 6.6232,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Coldharbour",
+      "number": "4.16"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

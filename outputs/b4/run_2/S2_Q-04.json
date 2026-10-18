@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-04",
+  "answer": "ANSWER: Millbrook | 2.59",
+  "samples": [
+    {
+      "answer": "Calculation summary:  \n- Ashgrove: 8,837 ÷ 24 = 368.208333... pupils per school  \n- Millbrook: 5,562 ÷ 15 = 370.8 pupils per school  \n- Difference: 370.8 − 368.208333... = 2.591666... ≈ 2.59 pupils per school  \n\nANSWER: Millbrook | 2.59 pupils per school",
+      "seconds": 1.3219,
+      "input_tokens": 2222,
+      "output_tokens": 95,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Ashgrove: 8,837 ÷ 24 = 368.208333… pupils per school  \n- Millbrook: 5,562 ÷ 15 = 370.8 pupils per school  \n- Difference: 370.8 − 368.208333… = 2.591666… ≈ 2.59 pupils per school  \n\nANSWER: Millbrook | 2.59 pupils per school more",
+      "seconds": 1.457,
+      "input_tokens": 2222,
+      "output_tokens": 96,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Ashgrove: 8,837 ÷ 24 = 368.208333… pupils per school  \n- Millbrook: 5,562 ÷ 15 = 370.8 pupils per school  \n- Difference: 370.8 − 368.208333… = 2.591666… ≈ 2.59 pupils per school  \n\nANSWER: Millbrook | 2.59 pupils per school",
+      "seconds": 1.2298,
+      "input_tokens": 2222,
+      "output_tokens": 95,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Ashgrove: 8,837 ÷ 24 = 368.208333… pupils per school  \n- Millbrook: 5,562 ÷ 15 = 370.8 pupils per school  \n- Difference: 370.8 − 368.208333… = 2.591666… ≈ 2.59\n\nANSWER: Millbrook | 2.59 pupils per school more",
+      "seconds": 1.3958,
+      "input_tokens": 2222,
+      "output_tokens": 93,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Ashgrove: 8,837 ÷ 24 = 368.208333… pupils per school  \n- Millbrook: 5,562 ÷ 15 = 370.8 pupils per school  \n- Difference: 370.8 − 368.208333… = 2.591666… ≈ 2.59 pupils per school  \n\nANSWER: Millbrook | 2.59 pupils per school",
+      "seconds": 1.2126,
+      "input_tokens": 2222,
+      "output_tokens": 95,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11110,
+  "output_tokens": 474,
+  "seconds": 6.6174,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Millbrook",
+      "number": "2.59"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

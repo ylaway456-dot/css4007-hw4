@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-05",
+  "answer": "ANSWER: Coldharbour | 14331",
+  "samples": [
+    {
+      "answer": "Calculation summary:  \n- Stonecairn: 2,884.6 million tenge ÷ 14,926 residents = 193,173.59 tenge/resident  \n- Coldharbour: 2,366.9 million tenge ÷ 11,407 residents = 207,505.04 tenge/resident  \n- Difference: 207,505.04 − 193,173.59 = 14,331.45 ≈ 14,331 tenge/resident  \n\nANSWER: Coldharbour | 14,331 tenge per resident",
+      "seconds": 1.7764,
+      "input_tokens": 2223,
+      "output_tokens": 122,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Stonecairn: 2,884.6 million tenge ÷ 14,926 residents = 193,229.99 tenge/resident  \n- Coldharbour: 2,366.9 million tenge ÷ 11,407 residents = 207,496.71 tenge/resident  \n- Difference: 207,496.71 − 193,229.99 = 14,266.72 ≈ 14,267 tenge/resident  \n\nANSWER: Coldharbour | 14,267 tenge per resident more",
+      "seconds": 1.8744,
+      "input_tokens": 2223,
+      "output_tokens": 123,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Stonecairn: 2,884.6 million ÷ 14,926 = 193,163.3 tenge/resident  \n- Coldharbour: 2,366.9 million ÷ 11,407 = 207,513.8 tenge/resident  \n- Difference: 207,513.8 − 193,163.3 = 14,350.5, rounded to 14,351 tenge/resident  \n\nANSWER: Coldharbour | 14,351 tenge per resident",
+      "seconds": 1.661,
+      "input_tokens": 2223,
+      "output_tokens": 117,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Stonecairn: 2,884.6 million tenge ÷ 14,926 residents = 193,213.45 tenge/resident  \n- Coldharbour: 2,366.9 million tenge ÷ 11,407 residents = 207,482.25 tenge/resident  \n- Difference: 207,482.25 − 193,213.45 = 14,268.80 ≈ 14,269 tenge/resident  \n\nANSWER: Coldharbour | 14,269 tenge per resident more",
+      "seconds": 1.6779,
+      "input_tokens": 2223,
+      "output_tokens": 123,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \nStonecairn: 2,884.6 million ÷ 14,926 = 193,283.44 tenge/resident.  \nColdharbour: 2,366.9 million ÷ 11,407 = 207,500.66 tenge/resident.  \nDifference: 207,500.66 − 193,283.44 = 14,217.22 ≈ 14,217 tenge/resident.\n\nANSWER: Coldharbour | 14,217 tenge per resident more",
+      "seconds": 1.5394,
+      "input_tokens": 2223,
+      "output_tokens": 116,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11115,
+  "output_tokens": 601,
+  "seconds": 8.5295,
+  "temperature_supported": true,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": false,
+    "parsed": {
+      "name": "Coldharbour",
+      "number": "14331"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

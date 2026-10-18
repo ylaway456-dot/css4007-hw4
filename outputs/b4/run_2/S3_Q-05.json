@@ -1,0 +1,200 @@
+{
+  "question_id": "Q-05",
+  "model": "gpt-5.6-luna",
+  "max_rounds": 8,
+  "status": "answered",
+  "answer": "Coldharbour had the larger 2025 budget per resident, by **14,235 tenge per resident**.\n\nANSWER: Coldharbour | 14235.0",
+  "api_rounds": [
+    {
+      "round": 1,
+      "seconds": 1.488,
+      "input_tokens": 496,
+      "output_tokens": 111
+    },
+    {
+      "round": 2,
+      "seconds": 0.932,
+      "input_tokens": 740,
+      "output_tokens": 40
+    },
+    {
+      "round": 3,
+      "seconds": 0.936,
+      "input_tokens": 807,
+      "output_tokens": 38
+    }
+  ],
+  "tool_calls": [
+    {
+      "round": 1,
+      "tool_call_id": "call_HBskxhaQe71zjXnUGXjf7IMI",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Stonecairn\", \"field\": \"budget_million_tenge\"}",
+      "result": {
+        "ok": true,
+        "value": 2884.6,
+        "unit": "million tenge",
+        "source_id": "NR-06"
+      },
+      "seconds": 0.000283
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_BDb2ayaF5Z9ONPJ6Jgugjzvb",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Stonecairn\", \"field\": \"population_2025\"}",
+      "result": {
+        "ok": true,
+        "value": 14926,
+        "unit": "residents",
+        "source_id": "NR-06"
+      },
+      "seconds": 0.000248
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_dCsnfqsmN5vn0I8tyj3Yhzg9",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Coldharbour\", \"field\": \"budget_million_tenge\"}",
+      "result": {
+        "ok": true,
+        "value": 2366.9,
+        "unit": "million tenge",
+        "source_id": "NR-12"
+      },
+      "seconds": 0.000173
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_EgqE8FJQtloWMOhLBag7dOF4",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Coldharbour\", \"field\": \"population_2025\"}",
+      "result": {
+        "ok": true,
+        "value": 11407,
+        "unit": "residents",
+        "source_id": "NR-12"
+      },
+      "seconds": 0.000138
+    },
+    {
+      "round": 2,
+      "tool_call_id": "call_8nqPVkUXq2LXHdARoa1nQAU2",
+      "tool": "calculate",
+      "arguments": "{\"expression\":\"(2884.6*1000000/14926)-(2366.9*1000000/11407)\"}",
+      "result": {
+        "ok": true,
+        "value": -14235.314486389194
+      },
+      "seconds": 0.000108
+    }
+  ],
+  "input_tokens": 2043,
+  "output_tokens": 189,
+  "error": null,
+  "total_seconds": 3.358,
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Answer questions about the fictional Nine Rivers Region. You do not have the documents. Get facts using lookup and perform arithmetic with calculate. Do not invent figures. Use 2025 figures, current profiles and corrections when relevant. Do not round intermediate results. Finish with a line exactly like: ANSWER: Name | 0.0. If reliable facts are missing, say UNANSWERED."
+    },
+    {
+      "role": "user",
+      "content": "Which district had the larger 2025 budget per resident, Stonecairn or Coldharbour, and by how many tenge per resident?\nRound the final number to 0 decimal places."
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_HBskxhaQe71zjXnUGXjf7IMI",
+          "function": {
+            "arguments": "{\"district\": \"Stonecairn\", \"field\": \"budget_million_tenge\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_BDb2ayaF5Z9ONPJ6Jgugjzvb",
+          "function": {
+            "arguments": "{\"district\": \"Stonecairn\", \"field\": \"population_2025\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_dCsnfqsmN5vn0I8tyj3Yhzg9",
+          "function": {
+            "arguments": "{\"district\": \"Coldharbour\", \"field\": \"budget_million_tenge\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_EgqE8FJQtloWMOhLBag7dOF4",
+          "function": {
+            "arguments": "{\"district\": \"Coldharbour\", \"field\": \"population_2025\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_HBskxhaQe71zjXnUGXjf7IMI",
+      "content": "{\"ok\": true, \"value\": 2884.6, \"unit\": \"million tenge\", \"source_id\": \"NR-06\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_BDb2ayaF5Z9ONPJ6Jgugjzvb",
+      "content": "{\"ok\": true, \"value\": 14926, \"unit\": \"residents\", \"source_id\": \"NR-06\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_dCsnfqsmN5vn0I8tyj3Yhzg9",
+      "content": "{\"ok\": true, \"value\": 2366.9, \"unit\": \"million tenge\", \"source_id\": \"NR-12\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_EgqE8FJQtloWMOhLBag7dOF4",
+      "content": "{\"ok\": true, \"value\": 11407, \"unit\": \"residents\", \"source_id\": \"NR-12\"}"
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_8nqPVkUXq2LXHdARoa1nQAU2",
+          "function": {
+            "arguments": "{\"expression\":\"(2884.6*1000000/14926)-(2366.9*1000000/11407)\"}",
+            "name": "calculate"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_8nqPVkUXq2LXHdARoa1nQAU2",
+      "content": "{\"ok\": true, \"value\": -14235.314486389194}"
+    },
+    {
+      "content": "Coldharbour had the larger 2025 budget per resident, by **14,235 tenge per resident**.\n\nANSWER: Coldharbour | 14235.0",
+      "role": "assistant",
+      "annotations": []
+    }
+  ],
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Coldharbour",
+      "number": "14235.0"
+    }
+  },
+  "strategy": "S3",
+  "run_number": 2
+}

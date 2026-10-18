@@ -1,0 +1,31 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-06",
+  "answer": "Yes, by 14,069 residents.  \nANSWER: Combined Redfen and Kelmarsh population vs Ossford | 14,069",
+  "samples": [
+    {
+      "answer": "Yes, by 14,069 residents.  \nANSWER: Combined Redfen and Kelmarsh population vs Ossford | 14,069",
+      "seconds": 1.1148,
+      "input_tokens": 2207,
+      "output_tokens": 31,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2207,
+  "output_tokens": 31,
+  "seconds": 1.1148,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": false,
+    "number_correct": true,
+    "parsed": {
+      "name": "Combined Redfen and Kelmarsh population vs Ossford",
+      "number": "14069"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

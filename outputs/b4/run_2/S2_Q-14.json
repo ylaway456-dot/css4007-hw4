@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-14",
+  "answer": "ANSWER: Ashgrove | 4.8",
+  "samples": [
+    {
+      "answer": "Calculation summary:  \n- Tarnvale: \\(5{,}207\\) ML \\(= 5{,}207{,}000{,}000\\) L; \\(5{,}207{,}000{,}000 \\div 71{,}388 \\div 365 = 199.9\\) L/resident/day.  \n- Ashgrove: \\(4{,}390\\) ML \\(= 4{,}390{,}000{,}000\\) L; \\(4{,}390{,}000{,}000 \\div 58{,}760 \\div 365 = 204.6\\) L/resident/day.  \n- Difference: \\(204.6 - 199.9 = 4.7\\) L/resident/day.\n\nANSWER: Ashgrove | 4.7 litres per resident per day more than Tarnvale",
+      "seconds": 2.0798,
+      "input_tokens": 2227,
+      "output_tokens": 195,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Tarnvale: \\(5{,}207\\) ML \\(= 5{,}207{,}000{,}000\\) L; \\(5{,}207{,}000{,}000 \\div 71{,}388 \\div 365 = 199.9\\) L/resident/day.  \n- Ashgrove: \\(4{,}390\\) ML \\(= 4{,}390{,}000{,}000\\) L; \\(4{,}390{,}000{,}000 \\div 58{,}760 \\div 365 = 204.6\\) L/resident/day.  \n- Difference: \\(204.6 - 199.9 = 4.7\\) L/resident/day.\n\nANSWER: Ashgrove | 4.7 litres per resident per day more",
+      "seconds": 2.3949,
+      "input_tokens": 2227,
+      "output_tokens": 192,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Tarnvale: \\(5{,}207\\) ML \\(= 5{,}207{,}000{,}000\\) L; \\(5{,}207{,}000{,}000 \\div 71{,}388 \\div 365 = 199.9\\) L/resident/day.  \n- Ashgrove: \\(4{,}390\\) ML \\(= 4{,}390{,}000{,}000\\) L; \\(4{,}390{,}000{,}000 \\div 58{,}760 \\div 365 = 204.7\\) L/resident/day.  \n- Difference: \\(204.7 - 199.9 = 4.8\\) L/resident/day.\n\nANSWER: Ashgrove | 4.8 litres per resident per day more",
+      "seconds": 2.0907,
+      "input_tokens": 2227,
+      "output_tokens": 192,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Tarnvale: \\(5{,}207\\) ML \\(= 5{,}207{,}000{,}000\\) L; \\(5{,}207{,}000{,}000 \\div 71{,}388 \\div 365 = 199.9\\) L/resident/day.  \n- Ashgrove: \\(4{,}390\\) ML \\(= 4{,}390{,}000{,}000\\) L; \\(4{,}390{,}000{,}000 \\div 58{,}760 \\div 365 = 204.7\\) L/resident/day.  \n- Difference: \\(204.7 - 199.9 = 4.8\\) L/resident/day.\n\nANSWER: Ashgrove | 4.8 litres per resident per day more",
+      "seconds": 2.2972,
+      "input_tokens": 2227,
+      "output_tokens": 192,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Tarnvale: \\(5{,}207\\) ML \\(= 5{,}207{,}000{,}000\\) L; \\(5{,}207{,}000{,}000 \\div 71{,}388 \\div 365 = 199.9\\) L/resident/day.  \n- Ashgrove: \\(4{,}390\\) ML \\(= 4{,}390{,}000{,}000\\) L; \\(4{,}390{,}000{,}000 \\div 58{,}760 \\div 365 = 204.7\\) L/resident/day.  \n- Difference: \\(204.7 - 199.9 = 4.8\\) L/resident/day.\n\nANSWER: Ashgrove | 4.8 litres per resident per day more",
+      "seconds": 2.1296,
+      "input_tokens": 2227,
+      "output_tokens": 192,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11135,
+  "output_tokens": 963,
+  "seconds": 10.9924,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Ashgrove",
+      "number": "4.8"
+    }
+  },
+  "status": "answered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

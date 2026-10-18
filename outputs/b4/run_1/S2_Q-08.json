@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-08",
+  "answer": "ANSWER: Brightwater | 72.46",
+  "samples": [
+    {
+      "answer": "Brightwater: 3,315 ML × 1,000 m³/ML × 142.35 = 471,? Wait: 3,315,000 × 142.35 = 471,? \n\nMillbrook: 2,806,000 × 142.35 = 399,? \n\nDifference: (3,315 − 2,806) × 1,000 × 142.35 = 72,? million tenge.\n\nANSWER: Brightwater | 72.46 million tenge",
+      "seconds": 1.523,
+      "input_tokens": 2229,
+      "output_tokens": 112,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Brightwater: \\(3{,}315 \\times 1{,}000 \\times 142.35 = 471{,}935{,}250\\) tenge.  \nMillbrook: \\(2{,}806 \\times 1{,}000 \\times 142.35 = 399{,}434{,}100\\) tenge.  \nDifference: \\(72{,}501{,}150\\) tenge \\(= 72.50\\) million tenge.\n\nANSWER: Brightwater | 72.50 million tenge",
+      "seconds": 1.5308,
+      "input_tokens": 2229,
+      "output_tokens": 123,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary: Brightwater used 3,315 ML = 3,315,000 m³; Millbrook used 2,806 ML = 2,806,000 m³. Difference = 509,000 m³ × 142.35 tenge/m³ = 72,455,? Wait: 509,000 × 142.35 = 72,? 142.35 × 509 = 72,? 142.35×500=71,175; ×9=1,281.15; total 72,456.15 thousand tenge = 72.45615 million tenge, rounded to 72.46 million.\n\nANSWER: Brightwater | 72.46 million tenge more",
+      "seconds": 1.9581,
+      "input_tokens": 2229,
+      "output_tokens": 155,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary: Brightwater used 3,315 ML = 3,315,000 m³; Millbrook used 2,806 ML = 2,806,000 m³. Difference = 509,000 m³ × 142.35 tenge/m³ = 72,454,? Wait: 509,000 × 142.35 = 72,454,? 142.35 × 509 = 72,? 142.35×500=71,175; ×9=1,281.15; total 72,456.15 thousand tenge = 72.45615 million tenge, rounded to 72.46 million tenge. Brightwater paid more.\n\nANSWER: Brightwater | 72.46 million tenge",
+      "seconds": 1.8986,
+      "input_tokens": 2229,
+      "output_tokens": 163,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary: Brightwater used 3,315 ML and Millbrook used 2,806 ML. Difference = 509 ML × 1,000 m³/ML × 142.35 tenge/m³ = 72,454,? Wait: 509,000 × 142.35 = 72,? 142.35 × 509 = 72,? 142.35×500=71,175; ×9=1,281.15; total 72,456.15 thousand tenge = 72.45615 million tenge. Brightwater paid more.\n\nANSWER: Brightwater | 72.46 million tenge વધુ",
+      "seconds": 1.9934,
+      "input_tokens": 2229,
+      "output_tokens": 140,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11145,
+  "output_tokens": 693,
+  "seconds": 8.9043,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Brightwater",
+      "number": "72.46"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

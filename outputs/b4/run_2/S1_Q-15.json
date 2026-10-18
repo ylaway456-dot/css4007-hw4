@@ -1,0 +1,25 @@
+{
+  "strategy": "S1",
+  "question_id": "Q-15",
+  "answer": "Redfen has more pupils per school: 314.70 pupils per school versus Kelmarsh’s 296.¿?",
+  "samples": [
+    {
+      "answer": "Redfen has more pupils per school: 314.70 pupils per school versus Kelmarsh’s 296.¿?",
+      "seconds": 1.2707,
+      "input_tokens": 2202,
+      "output_tokens": 28,
+      "temperature_used": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2202,
+  "output_tokens": 28,
+  "seconds": 1.2707,
+  "score": {
+    "correct": false,
+    "unanswered": true
+  },
+  "status": "unanswered",
+  "run_number": 2,
+  "model": "gpt-5.6-luna"
+}

@@ -411,43 +411,112 @@ arithmetic operations separately.
 
 **What I kept the same:**
 
-<!-- model, temperature, k, prompts, answer format, anything else -->
+- Model: `gpt-5.6-luna` for all strategies.
+- The same 20 questions in the same order.
+- The same source corpus for S1 and S2.
+- The same final answer format: `ANSWER: name | number`.
+- The same rounding requirement from each question.
+- `reasoning_effort="none"` for API compatibility.
+- S1 makes one direct request per question.
+- S2 makes 5 independent requests and uses majority voting.
+- S3 uses only lookup and calculate without documents
+  in its prompt.
+- S2 will use temperature 0.7 if supported by the model.
+  Otherwise, I will record that temperature could not be set.
+- Each experiment will be repeated twice.
 
 **My rule for a correct answer** (written before the first full run):
 
+1. The answer must contain `ANSWER: name | number`.
+2. The name must match the reference answer
+   (case-insensitive, without surrounding spaces).
+3. The numerical result is compared with the reference value
+   rounded to the required number of decimal places.
+4. A difference of at most one unit in the last decimal
+   place is allowed.
+5. An invalid answer, missing answer, or API failure is
+   counted as unanswered, not as correct.
+6. For S2, I vote on the complete name-and-number pair.
+   If there is a tie, I choose the earliest tied answer.
+7. I use reference answers only for scoring after generation.
+   I never send them to the model.
+
+**Cost calculation:**
+
+I will calculate costs from actual input/output token usage
+and the applicable API prices. Failed calls without usage
+are recorded separately.
+
 | Run | Strategy | Correct /20 | Unanswered | Input tokens | Output tokens | Median seconds per question | Total seconds | Cost ($) |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 1 | S1 direct | | | | | | | |
-| 1 | S2 think and vote (k = ) | | | | | | | |
-| 1 | S3 tools | | | | | | | |
-| 2 | S1 direct | | | | | | | |
-| 2 | S2 think and vote (k = ) | | | | | | | |
-| 2 | S3 tools | | | | | | | |
+| 1 | S1 direct | 8/20 | 1 | 44140 | 1338 | 1.337 | 27.377 | $0.010434 |
+| 1 | S2 think and vote (k = 5) | 14/20 | 0 | 222700 | 11085 | 7.524 | 155.767 | $0.057842 |
+| 1 | S3 tools | 15/20 | 0 | 46738 | 4153 | 3.875 | 81.627 | $0.014331 |
+| 2 | S1 direct | 8/20 | 4 | 44140 | 1315 | 1.391 | 28.078 | $0.010406 |
+| 2 | S2 think and vote (k = 5) | 15/20 | 0 | 222700 | 11109 | 8.078 | 159.222 | $0.057871 |
+| 2 | S3 tools | 17/20 | 0 | 49512 | 4198 | 3.875 | 79.694 | $0.014940 |
 
 **Per question (run 1):**
 
 | Question | S1 | S2 | S3 |
 |---|:---:|:---:|:---:|
-| Q-01 | | | |
-| Q-02 | | | |
-| Q-03 | | | |
-| Q-04 | | | |
-| Q-05 | | | |
-| Q-06 | | | |
-| Q-07 | | | |
-| Q-08 | | | |
-| Q-09 | | | |
-| Q-10 | | | |
-| Q-11 | | | |
-| Q-12 | | | |
-| Q-13 | | | |
-| Q-14 | | | |
-| Q-15 | | | |
-| Q-16 | | | |
-| Q-17 | | | |
-| Q-18 | | | |
-| Q-19 | | | |
-| Q-20 | | | |
+| Q-01 | ✓ | ✓ | ✓ |
+| Q-02 | ✓ | ✓ | ✓ |
+| Q-03 | ✓ | ✓ | ✓ |
+| Q-04 | ✓ | ✓ | ✓ |
+| Q-05 | ✗ | ✗ | ✓ |
+| Q-06 | ✗ | ✓ | ✗ |
+| Q-07 | ✗ | ✓ | ✓ |
+| Q-08 | ✓ | ✓ | ✗ |
+| Q-09 | ✓ | ✓ | ✓ |
+| Q-10 | ✓ | ✓ | ✓ |
+| Q-11 | ✗ | ✓ | ✓ |
+| Q-12 | ✗ | ✓ | ✓ |
+| Q-13 | ✗ | ✓ | ✓ |
+| Q-14 | ✓ | ✗ | ✓ |
+| Q-15 | ✗ | ✓ | ✓ |
+| Q-16 | ✗ | ✗ | ✗ |
+| Q-17 | ✗ | ✗ | ✗ |
+| Q-18 | ✗ | ✗ | ✗ |
+| Q-19 | ✗ | ✓ | ✓ |
+| Q-20 | ✗ | ✗ | ✓ |
+
+**Per question (run 2):**
+
+| Question | S1 | S2 | S3 |
+|---|:---:|:---:|:---:|
+| Q-01 | ✓ | ✓ | ✓ |
+| Q-02 | ✓ | ✓ | ✓ |
+| Q-03 | ✓ | ✓ | ✓ |
+| Q-04 | ✓ | ✓ | ✓ |
+| Q-05 | ✗ | ✗ | ✓ |
+| Q-06 | ✗ | ✓ | ✗ |
+| Q-07 | ✓ | ✓ | ✓ |
+| Q-08 | ✓ | ✓ | ✓ |
+| Q-09 | ✓ | ✓ | ✓ |
+| Q-10 | ✓ | ✓ | ✓ |
+| Q-11 | ✗ | ✓ | ✓ |
+| Q-12 | ✗ | ✓ | ✓ |
+| Q-13 | ✗ | ✓ | ✓ |
+| Q-14 | ✗ | ✓ | ✓ |
+| Q-15 | ✗ | ✗ | ✓ |
+| Q-16 | ✗ | ✗ | ✗ |
+| Q-17 | ✗ | ✗ | ✓ |
+| Q-18 | ✗ | ✓ | ✗ |
+| Q-19 | ✗ | ✓ | ✓ |
+| Q-20 | ✗ | ✗ | ✓ |
+
+**Cost calculation:**
+
+I used the published OpenAI list prices for `gpt-5.6-luna`: $0.20 per million input tokens and $1.20 per million output tokens.
+
+`Cost = (input tokens × 0.20 + output tokens × 1.20) / 1,000,000`
+
+These are estimated uncached list-price costs, not verified account charges. Prompt caching may reduce the actual billed amount.
+
+Source: https://developers.openai.com/api/docs/models/gpt-5.6-luna
+
+I counted tokens from every recorded API call, including all five samples in S2 and all tool-calling rounds in S3.
 
 ---
 

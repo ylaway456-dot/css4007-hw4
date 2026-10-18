@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-18",
+  "answer": "ANSWER: yes | 40016",
+  "samples": [
+    {
+      "answer": "Calculation summary:  \n2020–2025 growth factor = 37,203 ÷ 34,590 = 1.0756004626.  \nProjected 2030 population = 37,203 × 1.0756004626 = 40,016.4, which rounds to 40,016.  \nSince 40,016 exceeds 40,000: yes.\n\nANSWER: yes | 40,016",
+      "seconds": 1.764,
+      "input_tokens": 2244,
+      "output_tokens": 91,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Millbrook’s growth rate from 2020 to 2025:\n\n\\[\n\\frac{37,203-34,590}{34,590}=\\frac{2,613}{34,590}\\approx 7.5536\\%\n\\]\n\nProjected 2030 population:\n\n\\[\n37,203 \\times \\left(1+\\frac{2,613}{34,590}\\right)\\approx 40,014.6\n\\]\n\nRounded to 0 decimals: 40,015 residents, which exceeds 40,000.\n\nANSWER: Yes | 40,015",
+      "seconds": 1.7928,
+      "input_tokens": 2244,
+      "output_tokens": 122,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Millbrook’s growth factor from 2020 to 2025 was \\(37,203 \\div 34,590 = 1.075513\\).  \nProjected 2030 population: \\(37,203 \\times 1.075513 = 40,012.5\\), which rounds to **40,013**. This exceeds 40,000.\n\nANSWER: Yes | 40,013",
+      "seconds": 1.4374,
+      "input_tokens": 2244,
+      "output_tokens": 86,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Millbrook’s growth factor from 2020 to 2025 was \\(37,203 \\div 34,590 = 1.075513\\).  \nProjected 2030 population: \\(37,203 \\times 1.075513 = 40,011.0\\), which exceeds 40,000.\n\nANSWER: yes | 40011",
+      "seconds": 1.3569,
+      "input_tokens": 2244,
+      "output_tokens": 76,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Millbrook’s growth factor from 2020 to 2025 was:\n\n37,203 ÷ 34,590 = 1.075513\n\nProjected 2030 population:\n\n37,203 × 1.075513 = 40,012.1, rounded to 0 decimals = 40,012\n\nThis exceeds 40,000 residents: yes.\n\nANSWER: Millbrook | 40,012",
+      "seconds": 1.4437,
+      "input_tokens": 2244,
+      "output_tokens": 87,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11220,
+  "output_tokens": 462,
+  "seconds": 7.7951,
+  "temperature_supported": true,
+  "score": {
+    "correct": false,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": false,
+    "parsed": {
+      "name": "yes",
+      "number": "40016"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}

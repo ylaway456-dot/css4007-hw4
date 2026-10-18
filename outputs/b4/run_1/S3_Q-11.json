@@ -1,0 +1,336 @@
+{
+  "question_id": "Q-11",
+  "model": "gpt-5.6-luna",
+  "max_rounds": 8,
+  "status": "answered",
+  "answer": "Redfen has the fewest pupils per school, at 314.7. Millbrook is highest at 370.8, so the difference is 56.10 pupils per school.\n\nANSWER: Redfen | 56.10",
+  "api_rounds": [
+    {
+      "round": 1,
+      "seconds": 1.546,
+      "input_tokens": 509,
+      "output_tokens": 135
+    },
+    {
+      "round": 2,
+      "seconds": 1.229,
+      "input_tokens": 824,
+      "output_tokens": 67
+    },
+    {
+      "round": 3,
+      "seconds": 0.999,
+      "input_tokens": 948,
+      "output_tokens": 22
+    },
+    {
+      "round": 4,
+      "seconds": 1.022,
+      "input_tokens": 997,
+      "output_tokens": 50
+    }
+  ],
+  "tool_calls": [
+    {
+      "round": 1,
+      "tool_call_id": "call_AZPuTc009ttwrz51I73Mn8jE",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Redfen\", \"field\": \"pupils\"}",
+      "result": {
+        "ok": true,
+        "value": 3147,
+        "unit": "pupils",
+        "source_id": "NR-09"
+      },
+      "seconds": 0.000453
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_DwPUTdGGmU9ctZYmVU70wHn0",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Redfen\", \"field\": \"schools\"}",
+      "result": {
+        "ok": true,
+        "value": 10,
+        "unit": "schools",
+        "source_id": "NR-09"
+      },
+      "seconds": 0.000336
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_91mYUP9i3rqWjyjtrNgSz9zI",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Ashgrove\", \"field\": \"pupils\"}",
+      "result": {
+        "ok": true,
+        "value": 8837,
+        "unit": "pupils",
+        "source_id": "NR-10"
+      },
+      "seconds": 0.000166
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_T8943vQZtes0PLsXoVlB1UvG",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Ashgrove\", \"field\": \"schools\"}",
+      "result": {
+        "ok": true,
+        "value": 24,
+        "unit": "schools",
+        "source_id": "NR-10"
+      },
+      "seconds": 0.00014
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_5JbNs6aw8LZJuGBLP8exZWsW",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Millbrook\", \"field\": \"pupils\"}",
+      "result": {
+        "ok": true,
+        "value": 5562,
+        "unit": "pupils",
+        "source_id": "NR-11"
+      },
+      "seconds": 0.000136
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_xq8ZHiuo7xyU7zNrvfpgWWIs",
+      "tool": "lookup",
+      "arguments": "{\"district\": \"Millbrook\", \"field\": \"schools\"}",
+      "result": {
+        "ok": true,
+        "value": 15,
+        "unit": "schools",
+        "source_id": "NR-11"
+      },
+      "seconds": 0.000149
+    },
+    {
+      "round": 2,
+      "tool_call_id": "call_ueDUensSjqaMSEpp6mCvB0oa",
+      "tool": "calculate",
+      "arguments": "{\"expression\": \"3147/10\"}",
+      "result": {
+        "ok": true,
+        "value": 314.7
+      },
+      "seconds": 9.9e-05
+    },
+    {
+      "round": 2,
+      "tool_call_id": "call_Q6UIN8xWAz1vMpAwWCI6KaIU",
+      "tool": "calculate",
+      "arguments": "{\"expression\": \"8837/24\"}",
+      "result": {
+        "ok": true,
+        "value": 368.2083333333333
+      },
+      "seconds": 3.5e-05
+    },
+    {
+      "round": 2,
+      "tool_call_id": "call_B0nCdOx3iPi1N5Jof9u7Phr5",
+      "tool": "calculate",
+      "arguments": "{\"expression\": \"5562/15\"}",
+      "result": {
+        "ok": true,
+        "value": 370.8
+      },
+      "seconds": 3.7e-05
+    },
+    {
+      "round": 3,
+      "tool_call_id": "call_YFgG6ZGKQYg7IosUZvmTcIRs",
+      "tool": "calculate",
+      "arguments": "{\"expression\":\"370.8-314.7\"}",
+      "result": {
+        "ok": true,
+        "value": 56.10000000000002
+      },
+      "seconds": 9.9e-05
+    }
+  ],
+  "input_tokens": 3278,
+  "output_tokens": 274,
+  "error": null,
+  "total_seconds": 4.798,
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Answer questions about the fictional Nine Rivers Region. You do not have the documents. Get facts using lookup and perform arithmetic with calculate. Do not invent figures. Use 2025 figures, current profiles and corrections when relevant. Do not round intermediate results. Finish with a line exactly like: ANSWER: Name | 0.0. If reliable facts are missing, say UNANSWERED."
+    },
+    {
+      "role": "user",
+      "content": "Of Redfen, Ashgrove and Millbrook, which district has the fewest pupils per school in 2025/26, and how many pupils per school separate the highest of the three from the lowest?\nRound the final number to 2 decimal places."
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_AZPuTc009ttwrz51I73Mn8jE",
+          "function": {
+            "arguments": "{\"district\": \"Redfen\", \"field\": \"pupils\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_DwPUTdGGmU9ctZYmVU70wHn0",
+          "function": {
+            "arguments": "{\"district\": \"Redfen\", \"field\": \"schools\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_91mYUP9i3rqWjyjtrNgSz9zI",
+          "function": {
+            "arguments": "{\"district\": \"Ashgrove\", \"field\": \"pupils\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_T8943vQZtes0PLsXoVlB1UvG",
+          "function": {
+            "arguments": "{\"district\": \"Ashgrove\", \"field\": \"schools\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_5JbNs6aw8LZJuGBLP8exZWsW",
+          "function": {
+            "arguments": "{\"district\": \"Millbrook\", \"field\": \"pupils\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_xq8ZHiuo7xyU7zNrvfpgWWIs",
+          "function": {
+            "arguments": "{\"district\": \"Millbrook\", \"field\": \"schools\"}",
+            "name": "lookup"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_AZPuTc009ttwrz51I73Mn8jE",
+      "content": "{\"ok\": true, \"value\": 3147, \"unit\": \"pupils\", \"source_id\": \"NR-09\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_DwPUTdGGmU9ctZYmVU70wHn0",
+      "content": "{\"ok\": true, \"value\": 10, \"unit\": \"schools\", \"source_id\": \"NR-09\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_91mYUP9i3rqWjyjtrNgSz9zI",
+      "content": "{\"ok\": true, \"value\": 8837, \"unit\": \"pupils\", \"source_id\": \"NR-10\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_T8943vQZtes0PLsXoVlB1UvG",
+      "content": "{\"ok\": true, \"value\": 24, \"unit\": \"schools\", \"source_id\": \"NR-10\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_5JbNs6aw8LZJuGBLP8exZWsW",
+      "content": "{\"ok\": true, \"value\": 5562, \"unit\": \"pupils\", \"source_id\": \"NR-11\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_xq8ZHiuo7xyU7zNrvfpgWWIs",
+      "content": "{\"ok\": true, \"value\": 15, \"unit\": \"schools\", \"source_id\": \"NR-11\"}"
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_ueDUensSjqaMSEpp6mCvB0oa",
+          "function": {
+            "arguments": "{\"expression\": \"3147/10\"}",
+            "name": "calculate"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_Q6UIN8xWAz1vMpAwWCI6KaIU",
+          "function": {
+            "arguments": "{\"expression\": \"8837/24\"}",
+            "name": "calculate"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_B0nCdOx3iPi1N5Jof9u7Phr5",
+          "function": {
+            "arguments": "{\"expression\": \"5562/15\"}",
+            "name": "calculate"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_ueDUensSjqaMSEpp6mCvB0oa",
+      "content": "{\"ok\": true, \"value\": 314.7}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_Q6UIN8xWAz1vMpAwWCI6KaIU",
+      "content": "{\"ok\": true, \"value\": 368.2083333333333}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_B0nCdOx3iPi1N5Jof9u7Phr5",
+      "content": "{\"ok\": true, \"value\": 370.8}"
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_YFgG6ZGKQYg7IosUZvmTcIRs",
+          "function": {
+            "arguments": "{\"expression\":\"370.8-314.7\"}",
+            "name": "calculate"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_YFgG6ZGKQYg7IosUZvmTcIRs",
+      "content": "{\"ok\": true, \"value\": 56.10000000000002}"
+    },
+    {
+      "content": "Redfen has the fewest pupils per school, at 314.7. Millbrook is highest at 370.8, so the difference is 56.10 pupils per school.\n\nANSWER: Redfen | 56.10",
+      "role": "assistant",
+      "annotations": []
+    }
+  ],
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Redfen",
+      "number": "56.10"
+    }
+  },
+  "strategy": "S3",
+  "run_number": 1
+}

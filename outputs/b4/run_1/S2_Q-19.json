@@ -1,0 +1,64 @@
+{
+  "strategy": "S2",
+  "question_id": "Q-19",
+  "answer": "ANSWER: Lindenmoor | 0.035",
+  "samples": [
+    {
+      "answer": "Calculation summary:  \n- Lindenmoor: \\(402.3 \\div 1,015.7 = 0.396\\) km/km²  \n- Redfen: \\(244.6 \\div 677.1 = 0.361\\) km/km²  \n- Difference: \\(0.396 - 0.361 = 0.035\\) km/km²  \n\nLindenmoor has the denser paved road network by 0.035 km of road per square kilometre.\n\nANSWER: Lindenmoor | 0.035",
+      "seconds": 1.571,
+      "input_tokens": 2221,
+      "output_tokens": 114,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Lindenmoor: \\(402.3 \\div 1,015.7 = 0.396\\) km/km²  \n- Redfen: \\(244.6 \\div 677.1 = 0.361\\) km/km²  \n- Difference: \\(0.396 - 0.361 = 0.035\\) km/km²  \n\nANSWER: Lindenmoor | 0.035 km of road per square kilometre",
+      "seconds": 1.504,
+      "input_tokens": 2221,
+      "output_tokens": 98,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Lindenmoor: 402.3 ÷ 1,015.7 = 0.396 km/km²  \n- Redfen: 244.6 ÷ 677.1 = 0.361 km/km²  \n- Difference: 0.396 − 0.361 = 0.035 km/km²  \n\nANSWER: Lindenmoor | 0.035 km of road per square kilometre more",
+      "seconds": 1.6543,
+      "input_tokens": 2221,
+      "output_tokens": 93,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Lindenmoor: \\(402.3 \\div 1,015.7 = 0.396\\) km/km²  \n- Redfen: \\(244.6 \\div 677.1 = 0.361\\) km/km²  \n- Difference: \\(0.396 - 0.361 = 0.035\\) km/km²  \n\nLindenmoor has the denser paved road network by 0.035 km of road per square kilometre.\n\nANSWER: Lindenmoor | 0.035",
+      "seconds": 1.4279,
+      "input_tokens": 2221,
+      "output_tokens": 114,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    },
+    {
+      "answer": "Calculation summary:  \n- Lindenmoor: \\(402.3 \\div 1,015.7 = 0.396\\) km/km²  \n- Redfen: \\(244.6 \\div 677.1 = 0.361\\) km/km²  \n- Difference: \\(0.396 - 0.361 = 0.035\\) km/km²  \n\nANSWER: Lindenmoor | 0.035 km of road per square kilometre",
+      "seconds": 1.408,
+      "input_tokens": 2221,
+      "output_tokens": 98,
+      "temperature_used": 0.7,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 11105,
+  "output_tokens": 517,
+  "seconds": 7.5655,
+  "temperature_supported": true,
+  "score": {
+    "correct": true,
+    "unanswered": false,
+    "name_correct": true,
+    "number_correct": true,
+    "parsed": {
+      "name": "Lindenmoor",
+      "number": "0.035"
+    }
+  },
+  "status": "answered",
+  "run_number": 1,
+  "model": "gpt-5.6-luna"
+}
