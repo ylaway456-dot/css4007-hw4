@@ -323,19 +323,89 @@ I will test whether this design is actually useful by comparing the three strate
 
 ### What I changed from Part A while coding
 
-<!-- what changed in your plan, and why. "None" is an answer too. -->
+I kept my original design with separate lookup and
+calculate tools.
+
+During implementation, I used regular expressions
+to extract values from the local document corpus.
+I also added input validation, safe AST arithmetic,
+and an 8-round limit for tool calling.
+
+During API testing, I received an error because
+function tools were not supported with the current
+reasoning setting in Chat Completions.
+I set reasoning_effort to "none" and repeated the
+real Q-09 test successfully.
 
 ### B2 — Tests
 
+I tested both tools using pytest without an API key. The tests check factual retrieval, similar district names, archived profiles, corrections, arithmetic, and unsafe inputs.
+
 ```text
-<!-- pytest output -->
+..................                                                       [100%]
+18 passed in 0.03s
 ```
 
 ### B3 — The loop
 
-- Round limit, and why:
-- Where the logs are:
-- Real Q-09 conversation compared with my A3 version, what is different:
+**Round limit and why:**
+
+I set the maximum number of rounds to 8. This prevents
+endless tool calls and limits unnecessary API costs.
+If the model cannot finish within the limit,
+the question is marked as unanswered.
+
+**Where the logs are:**
+
+The real Q-09 conversation is saved in
+`outputs/b3_Q-09.json`.
+
+The log contains the model messages, tool call IDs,
+arguments, tool results, time, and token usage.
+
+**Real Q-09 results:**
+
+| Metric | Result |
+|---|---:|
+| Status | answered |
+| API rounds | 4 |
+| Lookup calls | 4 |
+| Calculate calls | 3 |
+| Total tool calls | 7 |
+| Input tokens | 2944 |
+| Output tokens | 228 |
+| Total time | 5.765 seconds |
+
+**Comparison with my A3 plan:**
+
+In A3, I planned 4 lookup calls and 3 calculate calls.
+
+In the real run, the model used 4 lookup calls
+and 3 calculate calls over
+4 API rounds.
+
+The number of tool calls matched my handwritten plan.
+
+The corrected document NR-16 was
+used successfully.
+
+The model retrieved the population and area of both
+districts, calculated their population densities,
+compared the values, and gave the final answer.
+
+**Final answer from the real model:**
+
+```text
+Millbrook has the higher 2025 population density by **0.6 residents per square kilometre**.
+
+ANSWER: Millbrook | 0.6
+```
+
+**What I learned:**
+
+The tool-calling approach makes calculations easier
+to verify because I can see the sources and
+arithmetic operations separately.
 
 ### B4 — Three strategies
 
