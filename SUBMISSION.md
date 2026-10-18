@@ -1,6 +1,6 @@
 # HW4 — submission
 
-**AI assistance:** I used ChatGPT to understand the assignment and help draft my Part A plan. I reviewed the explanations and content.
+**AI assistance:** I used ChatGPT to help plan Part A, draft and debug Python code, design tests, and write explanations based on my experiment logs. I ran the experiments in Google Colab and checked the outputs and calculations.
 
 ---
 
@@ -524,23 +524,341 @@ I counted tokens from every recorded API call, including all five samples in S2 
 
 ### C1 — Does the tool description matter?
 
+I tested five questions using the original lookup description and the vague description `Looks things up.` I kept the model, question, tool implementation and other settings unchanged.
+
 | Question | Calls (your description) | Calls (vague) | Answer (yours) | Answer (vague) |
 |---|---:|---:|---|---|
-| | | | | |
+| Q-01 | 7 | 7 | Ossbridge / 4.6 | Ossbridge / 4.6 |
+| Q-05 | 6 | 7 | Coldharbour / 14235.0 | Coldharbour / 14235.0 |
+| Q-08 | 6 | 8 | UNANSWERED / 0.0 | Brightwater / 72.46 |
+| Q-09 | 7 | 7 | Millbrook / 0.6 | Millbrook / 0.6 |
+| Q-11 | 10 | 10 | Redfen / 56.10 | Redfen / 56.10 |
+
+**Changes in lookup inputs:**
+
+**Q-01:**
+The same lookup inputs were used (possibly in a different order).
+
+**Q-05:**
+The same lookup inputs were used (possibly in a different order).
+
+**Q-08:**
+Original-only inputs: `region: water_use`; `region: water_use`; `region: ml_to_m3`.
+Vague-only inputs: `Brightwater: water_use`; `Brightwater: water_tariff`; `Millbrook: water_use`; `Millbrook: water_tariff`.
+
+**Q-09:**
+The same lookup inputs were used (possibly in a different order).
+
+**Q-11:**
+The same lookup inputs were used (possibly in a different order).
+
+**My interpretation:**
+
+The original description answered 4/5 questions correctly, while the vague description answered 5/5 correctly.
+
+On Q-05, the vague description required one more tool call but the final answer did not change. On Q-08, it required two more calls and returned the correct answer, while the original run was wrong.
+
+This does not prove that vague descriptions are better. The model may take different paths across API runs, even with the same settings. The description can affect how the model chooses tools, but five questions with one observation per version are not enough to separate that effect from run-to-run variation.
+
+My conclusion is that clear tool descriptions are still useful because they explain the correct fields, data sources and limitations. I would keep the detailed description for a more reliable system.
+
+Full logs: `outputs/c1_vague/`.
 
 ### C2 — Three mistakes explained
 
+#### Mistake 1: S1 direct, Q-05, Run 1
+
+**What the model did:**
+
+From my real log:
+
+> ANSWER: Stonecairn | 20,359
+
+The model selected Stonecairn, but the correct answer
+was Coldharbour with a difference of 14,235 tenge
+per resident.
+
+I checked the original documents NR-06 and NR-12:
+
+- Stonecairn: 2,884.6 million tenge / 14,926 residents
+  = 193,260.08 tenge per resident.
+- Coldharbour: 2,366.9 million tenge / 11,407 residents
+  = 207,495.40 tenge per resident.
+- Difference = 14,235.31 tenge per resident.
+
+**Why I think it happened:**
+
+S1 had to read the documents, select the numbers,
+divide and compare without a calculator tool.
+It produced the wrong winner and numerical result.
+The saved response does not show its intermediate
+calculations, so I cannot prove the exact internal
+step that caused the mistake.
+
+A calculator would make the division and subtraction
+more reliable and easier to check.
+
+#### Mistake 2: S2 think and vote, Q-14, Run 1
+
+**What the model did:**
+
+From the real voting result:
+
+> ANSWER: Ashgrove | 4.7
+
+All five samples produced Ashgrove with a difference
+of 4.7 litres per resident per day.
+
+The correct calculations are:
+
+- Tarnvale: 199.8341 litres per resident per day.
+- Ashgrove: 204.6868 litres per resident per day.
+- Difference: 4.8528, which rounds to 4.9.
+
+In the samples, the model used approximately 199.9
+and 204.6, then subtracted them to get 4.7.
+These intermediate approximations were inaccurate.
+
+**Why voting did not help:**
+
+The five answers repeated the same numerical mistake.
+Majority voting can reduce some random errors if
+different samples make different mistakes.
+It cannot correct a systematic error shared by all
+five samples. In this case, five calls increased
+the token cost without fixing the calculation.
+
+#### Mistake 3: S3 tools, Q-06, Run 1
+
+**What the model did:**
+
+The real tool log contains these results:
+
+- Redfen population: 20,934 (NR-09).
+- Kelmarsh population: 24,117 (NR-04).
+- Ossford population: 30,982 (NR-02).
+- Calculator result: 20,934 + 24,117 - 30,982 = 14,069.
+
+The final model response was:
+
+> ANSWER: Combined population is larger | 14069.0
+
+The expected name was `yes`, but the model wrote
+`Combined population is larger`.
+
+**Why it was marked wrong:**
+
+This was not an arithmetic error. The calculator
+returned the correct difference of 14,069.
+However, my pre-defined scoring rule requires the
+name in the final answer to match exactly.
+The model did not follow the required yes/no format.
+
+I kept this result marked as wrong because I should
+not change my scoring rule after the experiment.
+
+**Why the loop used several rounds:**
+
+This question needed 3 API rounds and
+4 tool calls. The model requested
+population values, received the tool results,
+calculated the difference, and wrote the answer.
+
+The input tokens per round were: 500, 683, 732.
+
+The later calls used more input tokens because
+the conversation included earlier model messages,
+tool requests and returned results.
+
+**What I learned from the three mistakes:**
+
+S1 can make factual or numerical mistakes when doing
+everything directly. S2 can reduce some unstable
+answers, but repeated reasoning does not guarantee
+correct arithmetic. S3 makes the calculation
+verifiable, but the final model response can still
+break the required output format.
+
+For a future version, I would validate the final
+answer format before accepting it, while keeping
+the original experimental results unchanged.
+
 ### C3 — Which strategy I would use, and what would change it
+
+**My choice: S3 — Tools**
+
+I would choose S3 for the Nine Rivers questions because
+it gave the best accuracy across my two runs.
+
+My results were:
+
+| Strategy | Average accuracy | Average total tokens per run | Average median time | Estimated cost per run |
+|---|---:|---:|---:|---:|
+| S1 Direct | 40.0% | 45,466 | 1.364 s | $0.01042 |
+| S2 Think and Vote | 72.5% | 233,797 | 7.801 s | $0.05786 |
+| S3 Tools | 80.0% | 52,300 | 3.875 s | $0.01464 |
+
+These costs are estimates based on the price assumptions
+in Part B4, not verified invoice amounts.
+
+**Why I chose S3:**
+
+S3 answered 32 out of 40 question attempts correctly,
+compared with 29 out of 40 for S2 and 16 out of 40 for S1.
+
+S3 also used fewer tokens than S2. My estimated cost
+for S2 was about 4.0 times the cost of S3.
+
+I think S3 is useful for this task because it separates
+retrieving information from mathematical calculations.
+I can inspect the source documents and the calculator
+results when something goes wrong.
+
+**Why I did not choose S1:**
+
+S1 was the fastest and cheapest strategy, but it only
+achieved 40.0% accuracy. It sometimes made
+incorrect calculations or chose the wrong district.
+For this homework, accurate numerical answers are
+more important than saving one or two seconds.
+
+**Why I did not choose S2:**
+
+S2 achieved 72.5% accuracy, which was much
+better than S1, but still lower than S3.
+It required five independent model responses for each
+question, which increased both token usage and time.
+The five answers could also repeat the same mistake,
+as happened in Q-14.
+
+**Situations that would change my choice:**
+
+1. **Very strict time limit:** I might choose S1 for
+   simple questions that do not require calculations.
+   It had the shortest median response time. I would
+   only do this when the lower accuracy is acceptable.
+
+2. **Very small API budget:** I might choose S1 for
+   low-risk questions because it had the lowest
+   estimated cost. If accuracy was important, I would
+   still prefer S3 when the budget allowed it.
+
+3. **Many more documents:** If there were 1,000 times
+   more documents, I would choose a tool-based method,
+   but I would improve lookup with an efficient search
+   index or retrieval system. The current simple
+   document lookup would not scale well.
+
+4. **No external tools allowed:** I would choose S2
+   over S1 when accuracy mattered more than cost,
+   because S2 performed better in my experiment.
+
+Overall, S3 gave me the best balance of accuracy,
+time and estimated cost for this particular task.
 
 ### C4 — How sure I can be
 
+**How different were my two runs?**
+
+| Strategy | Run 1 | Run 2 | Difference |
+|---|---:|---:|---:|
+| S1 | 8/20 | 8/20 | 0 questions |
+| S2 | 14/20 | 15/20 | 1 question |
+| S3 | 15/20 | 17/20 | 2 questions |
+
+S1 had the same total accuracy in both runs, but
+that does not mean it answered the exact same
+questions correctly.
+
+The questions that changed from correct to incorrect,
+or vice versa, were:
+
+- S1: Q-07, Q-14.
+- S2: Q-14, Q-15, Q-18.
+- S3: Q-08, Q-17.
+
+**Is the difference between the two best strategies
+larger than the variation?**
+
+S3 achieved an average accuracy of 80.0%,
+while S2 achieved 72.5%.
+
+The difference was 7.5 percentage points.
+
+In Run 1, S3 answered one more question correctly
+than S2. In Run 2, it answered two more correctly.
+
+However, S3 itself changed by two correct answers
+between runs. This variation is large compared
+with the advantage of S3 over S2.
+
+Therefore, I cannot say that S3 is always better
+than S2 based on this experiment alone.
+
+**How many questions would I need?**
+
+I would test at least 200 new and varied questions,
+and preferably several hundred, with repeated runs.
+I would include different types of questions,
+such as simple retrieval, calculations, unit
+conversions and corrections.
+
+I would also compare the strategies on exactly the
+same questions and report uncertainty, not only
+average accuracy.
+
+**Other limitations:**
+
+- I tested only one fictional document collection.
+- The 20 questions are a small sample.
+- Both runs used the same questions, so they are not
+  40 fully independent questions.
+- The model can vary between API runs.
+- My scoring rule allows a small numerical tolerance.
+  This can count slightly incorrect rounding as correct.
+- Strict final-answer formatting can mark a
+  mathematically correct response as wrong, like Q-06.
+- My cost calculations are estimates rather than
+  verified billing amounts.
+
+**My conclusion:**
+
+S3 was the best strategy in my experiment,
+but the evidence is not strong enough to prove
+that it will always be the best choice.
+I would need more questions and repeated tests
+before trusting a small accuracy difference.
+
 ### Final questions
 
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
+1. **When the model sends a `tool_calls` message, what has actually run so far?**
+
+The model has only requested a function call, but the function has not executed yet. My Python loop reads the request, checks its arguments, runs the correct tool, and sends the result back to the model. The model then continues generating its answer.
+
+2. **Why does `arguments` arrive as a string, and what goes wrong if you pass it straight into your function?**
+
+Arguments arrive as a JSON string because the model generates a structured request that must be decoded by my program. I use `json.loads()` to convert the string into a Python dictionary and validate its fields. Without parsing and validation, the function may receive the wrong data type or unexpected arguments.
+
+3. **How many tokens do your two tool definitions add to every S3 request?**
+
+I measured the overhead with two short API requests using the same messages. The request without tools used 18 input tokens, while the request with both tool definitions used 386, so the difference was 368 tokens. This measures the definitions' overhead in my controlled test; actual request sizes also depend on conversation history.
+
+4. **How much more did S2 cost than S1?**
+
+In my two experiments, the average estimated cost of S1 was $0.010420 per run, compared with $0.057856 for S2. S2 was approximately 5.55 times more expensive because it generated five independent responses for every question instead of one. These figures are based on my token usage and estimated API prices, not verified billing charges.
+
+5. **Which question needed the most rounds in S3, and why?**
+
+Q-08 in Run 2 took the most rounds, with 6 API rounds, 7 lookup calls and 1 calculator call. The question compares the water payments of Brightwater and Millbrook, requiring water-use figures, the regional tariff and consistent units. The multiple lookups and returned results increased the number of exchanges before the final answer.
+
+6. **What would you change in `lookup` if there were 100,000 documents?**
+
+I would not scan all documents with simple regular expressions for every question. I would create a search index, such as BM25 or an embedding-based retrieval system, and return only the most relevant results. I would also store document dates and correction information so archived data does not replace current facts.
+
+7. **What stops `calculate` from running dangerous code? Could the model still make it misbehave?**
+
+My calculator uses Python's `ast` module and allows only numeric constants and selected arithmetic operators, without `eval()` or `exec()`. It rejects function calls, attribute access, unsupported operators, division by zero and oversized calculations. The model can still send invalid or misleading mathematical expressions, so input validation does not guarantee that every numerical answer is correct.
+
+8. **For which kind of question did tools help most, and for which did they not help at all?**
+
+Tools helped most with multi-step numerical questions where the model needed to retrieve several facts and perform calculations, such as Q-05, where S3 was correct in both runs while S1 and S2 were wrong. They did not improve Q-16 in my experiment because all three strategies were scored wrong in both runs. I also learned from Q-06 that tools can calculate correctly while the final model response still fails the required answer format.

@@ -1,0 +1,19 @@
+{
+  "model": "gpt-5.6-luna",
+  "prompt_tokens_without_tools": 18,
+  "prompt_tokens_with_tools": 386,
+  "extra_tool_definition_tokens": 368,
+  "longest_s3_rounds": 6,
+  "longest_questions": [
+    {
+      "run": 2,
+      "question_id": "Q-08",
+      "rounds": 6,
+      "lookup_calls": 7,
+      "calculate_calls": 1
+    }
+  ],
+  "average_s1_cost": 0.0104198,
+  "average_s2_cost": 0.0578564,
+  "s2_to_s1_cost_ratio": 5.552544194706233
+}

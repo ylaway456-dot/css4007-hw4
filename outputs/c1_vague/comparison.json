@@ -1,0 +1,116 @@
+[
+  {
+    "question": "Q-01",
+    "original_calls": 7,
+    "vague_calls": 7,
+    "original_inputs": [
+      "{\"district\": \"Ossbridge\", \"field\": \"population_2025\"}",
+      "{\"district\": \"Ossbridge\", \"field\": \"area_km2\"}",
+      "{\"district\": \"Ossford\", \"field\": \"population_2025\"}",
+      "{\"district\": \"Ossford\", \"field\": \"area_km2\"}"
+    ],
+    "vague_inputs": [
+      "{\"district\": \"Ossbridge\", \"field\": \"population_2025\"}",
+      "{\"district\": \"Ossbridge\", \"field\": \"area_km2\"}",
+      "{\"district\": \"Ossford\", \"field\": \"population_2025\"}",
+      "{\"district\": \"Ossford\", \"field\": \"area_km2\"}"
+    ],
+    "original_answer": "Ossbridge / 4.6",
+    "vague_answer": "Ossbridge / 4.6",
+    "original_correct": true,
+    "vague_correct": true
+  },
+  {
+    "question": "Q-05",
+    "original_calls": 6,
+    "vague_calls": 7,
+    "original_inputs": [
+      "{\"district\": \"Stonecairn\", \"field\": \"budget_million_tenge\"}",
+      "{\"district\": \"Stonecairn\", \"field\": \"population_2025\"}",
+      "{\"district\": \"Coldharbour\", \"field\": \"budget_million_tenge\"}",
+      "{\"district\": \"Coldharbour\", \"field\": \"population_2025\"}"
+    ],
+    "vague_inputs": [
+      "{\"district\": \"Stonecairn\", \"field\": \"budget_million_tenge\"}",
+      "{\"district\": \"Stonecairn\", \"field\": \"population_2025\"}",
+      "{\"district\": \"Coldharbour\", \"field\": \"budget_million_tenge\"}",
+      "{\"district\": \"Coldharbour\", \"field\": \"population_2025\"}"
+    ],
+    "original_answer": "Coldharbour / 14235.0",
+    "vague_answer": "Coldharbour / 14235.0",
+    "original_correct": true,
+    "vague_correct": true
+  },
+  {
+    "question": "Q-08",
+    "original_calls": 6,
+    "vague_calls": 8,
+    "original_inputs": [
+      "{\"district\": \"Brightwater\", \"field\": \"population_2025\"}",
+      "{\"district\": \"Millbrook\", \"field\": \"population_2025\"}",
+      "{\"district\": \"region\", \"field\": \"water_use\"}",
+      "{\"district\": \"region\", \"field\": \"water_tariff\"}",
+      "{\"district\":\"region\",\"field\":\"ml_to_m3\"}",
+      "{\"district\":\"region\",\"field\":\"water_use\"}"
+    ],
+    "vague_inputs": [
+      "{\"district\": \"Brightwater\", \"field\": \"population_2025\"}",
+      "{\"district\": \"Brightwater\", \"field\": \"water_use\"}",
+      "{\"district\": \"Brightwater\", \"field\": \"water_tariff\"}",
+      "{\"district\": \"Millbrook\", \"field\": \"population_2025\"}",
+      "{\"district\": \"Millbrook\", \"field\": \"water_use\"}",
+      "{\"district\": \"Millbrook\", \"field\": \"water_tariff\"}",
+      "{\"district\":\"region\",\"field\":\"water_tariff\"}"
+    ],
+    "original_answer": "UNANSWERED / 0.0",
+    "vague_answer": "Brightwater / 72.46",
+    "original_correct": false,
+    "vague_correct": true
+  },
+  {
+    "question": "Q-09",
+    "original_calls": 7,
+    "vague_calls": 7,
+    "original_inputs": [
+      "{\"district\": \"Brightwater\", \"field\": \"population_2025\"}",
+      "{\"district\": \"Brightwater\", \"field\": \"area_km2\"}",
+      "{\"district\": \"Millbrook\", \"field\": \"population_2025\"}",
+      "{\"district\": \"Millbrook\", \"field\": \"area_km2\"}"
+    ],
+    "vague_inputs": [
+      "{\"district\": \"Brightwater\", \"field\": \"population_2025\"}",
+      "{\"district\": \"Brightwater\", \"field\": \"area_km2\"}",
+      "{\"district\": \"Millbrook\", \"field\": \"population_2025\"}",
+      "{\"district\": \"Millbrook\", \"field\": \"area_km2\"}"
+    ],
+    "original_answer": "Millbrook / 0.6",
+    "vague_answer": "Millbrook / 0.6",
+    "original_correct": true,
+    "vague_correct": true
+  },
+  {
+    "question": "Q-11",
+    "original_calls": 10,
+    "vague_calls": 10,
+    "original_inputs": [
+      "{\"district\": \"Redfen\", \"field\": \"pupils\"}",
+      "{\"district\": \"Redfen\", \"field\": \"schools\"}",
+      "{\"district\": \"Ashgrove\", \"field\": \"pupils\"}",
+      "{\"district\": \"Ashgrove\", \"field\": \"schools\"}",
+      "{\"district\": \"Millbrook\", \"field\": \"pupils\"}",
+      "{\"district\": \"Millbrook\", \"field\": \"schools\"}"
+    ],
+    "vague_inputs": [
+      "{\"district\": \"Redfen\", \"field\": \"pupils\"}",
+      "{\"district\": \"Redfen\", \"field\": \"schools\"}",
+      "{\"district\": \"Ashgrove\", \"field\": \"pupils\"}",
+      "{\"district\": \"Ashgrove\", \"field\": \"schools\"}",
+      "{\"district\": \"Millbrook\", \"field\": \"pupils\"}",
+      "{\"district\": \"Millbrook\", \"field\": \"schools\"}"
+    ],
+    "original_answer": "Redfen / 56.10",
+    "vague_answer": "Redfen / 56.10",
+    "original_correct": true,
+    "vague_correct": true
+  }
+]
